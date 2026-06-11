@@ -1,4 +1,756 @@
 {
+  "搞钱/副业资源": [
+    {
+      "name": "Upwork",
+      "desc": "全球最大自由职业平台，接单做翻译/设计/编程",
+      "url": "https://upwork.com",
+      "tags": [
+        "接单",
+        "全球",
+        "自由职业"
+      ],
+      "type": "平台",
+      "en": "Upwork",
+      "en_desc": "World's largest freelancing platform"
+    },
+    {
+      "name": "Fiverr",
+      "desc": "全球零工平台，卖服务从$5起",
+      "url": "https://fiverr.com",
+      "tags": [
+        "接单",
+        "零工",
+        "服务"
+      ],
+      "type": "平台",
+      "en": "Fiverr",
+      "en_desc": "Global gig marketplace from $5"
+    },
+    {
+      "name": "猪八戒网",
+      "desc": "国内最大服务交易平台",
+      "url": "https://zbj.com",
+      "tags": [
+        "接单",
+        "国内",
+        "服务"
+      ],
+      "type": "平台",
+      "en": "Zhubajie",
+      "en_desc": "China's largest service marketplace"
+    },
+    {
+      "name": "闲鱼",
+      "desc": "二手交易平台，也可卖虚拟资料/课程/代找资源",
+      "url": "https://goofish.com",
+      "tags": [
+        "二手",
+        "卖货",
+        "虚拟"
+      ],
+      "type": "平台",
+      "en": "Xianyu",
+      "en_desc": "Alibaba's second-hand & digital goods"
+    },
+    {
+      "name": "小红书 引流变现",
+      "desc": "小红书做内容号，积累粉丝后接广告/带货",
+      "url": "https://xiaohongshu.com",
+      "tags": [
+        "内容",
+        "引流",
+        "带货"
+      ],
+      "type": "平台",
+      "en": "Xiaohongshu Monetization",
+      "en_desc": "Content → followers → money"
+    },
+    {
+      "name": "公众号流量主",
+      "desc": "微信写公众号，500粉开通流量主广告收益",
+      "url": "https://mp.weixin.qq.com",
+      "tags": [
+        "写作",
+        "流量主",
+        "广告"
+      ],
+      "type": "平台",
+      "en": "WeChat Official Account Ads",
+      "en_desc": "Earn from WeChat articles"
+    },
+    {
+      "name": "YouTube 广告分成",
+      "desc": "YouTube创收，1000粉+4000小时可开通广告",
+      "url": "https://youtube.com",
+      "tags": [
+        "视频",
+        "广告",
+        "全球"
+      ],
+      "type": "平台",
+      "en": "YouTube Ad Revenue",
+      "en_desc": "Earn from video ads"
+    },
+    {
+      "name": "Google AdSense",
+      "desc": "网站/博客放广告赚广告费，有流量就有收入",
+      "url": "https://adsense.google.com",
+      "tags": [
+        "广告",
+        "网站",
+        "被动"
+      ],
+      "type": "平台",
+      "en": "Google AdSense",
+      "en_desc": "Earn from website ads"
+    },
+    {
+      "name": "Shopify 开店",
+      "desc": "建立自己的在线商店，14天免费试用",
+      "url": "https://shopify.com",
+      "tags": [
+        "开店",
+        "电商",
+        "建站"
+      ],
+      "type": "平台",
+      "en": "Shopify",
+      "en_desc": "Build your online store"
+    },
+    {
+      "name": "Etsy 手工艺品",
+      "desc": "卖手工制品/数字产品/设计模板，全球买家",
+      "url": "https://etsy.com",
+      "tags": [
+        "手工艺",
+        "设计",
+        "全球"
+      ],
+      "type": "平台",
+      "en": "Etsy",
+      "en_desc": "Sell handmade & digital globally"
+    },
+    {
+      "name": "Affiliate 联盟营销",
+      "desc": "推广产品拿佣金，Amazon/淘宝客/各类AI工具",
+      "url": "https://affiliate-program.amazon.com",
+      "tags": [
+        "推广",
+        "佣金",
+        "联盟"
+      ],
+      "type": "模式",
+      "en": "Affiliate Marketing",
+      "en_desc": "Earn commissions promoting products"
+    },
+    {
+      "name": "知识星球",
+      "desc": "付费社群工具，沉淀干货/问答/资源分享",
+      "url": "https://zsxq.com",
+      "tags": [
+        "社群",
+        "付费",
+        "知识"
+      ],
+      "type": "平台",
+      "en": "Zsxq - Paid Community",
+      "en_desc": "Premium content community platform"
+    },
+    {
+      "name": "小鹅通",
+      "desc": "卖课程/专栏/社群会员，知识变现工具",
+      "url": "https://xiaoe-tech.com",
+      "tags": [
+        "课程",
+        "知识付费",
+        "社群"
+      ],
+      "type": "平台",
+      "en": "XiaoE Tech",
+      "en_desc": "Sell courses & memberships"
+    },
+    {
+      "name": "知乎好物推荐",
+      "desc": "知乎写回答插入商品链接赚佣金",
+      "url": "https://zhihu.com",
+      "tags": [
+        "写作",
+        "推荐",
+        "佣金"
+      ],
+      "type": "平台",
+      "en": "Zhihu Product Recs",
+      "en_desc": "Earn from Zhihu article links"
+    },
+    {
+      "name": "程序员接单（程序员客栈）",
+      "desc": "国内程序员接外包项目平台",
+      "url": "https://proginn.com",
+      "tags": [
+        "编程",
+        "接单",
+        "外包"
+      ],
+      "type": "平台",
+      "en": "Proginn - Freelance Coding",
+      "en_desc": "China's dev outsourcing platform"
+    },
+    {
+      "name": "淘宝客",
+      "desc": "推广淘宝商品拿佣金，适合有流量渠道的人",
+      "url": "https://alimama.com",
+      "tags": [
+        "推广",
+        "淘宝",
+        "佣金"
+      ],
+      "type": "平台",
+      "en": "Taobao Affiliate",
+      "en_desc": "Earn promoting Taobao products"
+    },
+    {
+      "name": "摄影图库（Shutterstock等）",
+      "desc": "卖照片/插画素材，一次上传多次被动收入",
+      "url": "https://shutterstock.com",
+      "tags": [
+        "摄影",
+        "素材",
+        "被动"
+      ],
+      "type": "平台",
+      "en": "Stock Photography",
+      "en_desc": "Passive income from photos"
+    },
+    {
+      "name": "配音/有声书接单",
+      "desc": "喜马拉雅/懒人听书等平台录制有声书赚稿费",
+      "url": "https://ximalaya.com",
+      "tags": [
+        "配音",
+        "有声书",
+        "录制"
+      ],
+      "type": "平台",
+      "en": "Voice-over & Audiobook",
+      "en_desc": "Record audiobooks for money"
+    },
+    {
+      "name": "Telegram 群组变现",
+      "desc": "通过TG群/频道做广告位/付费会员/导航变现",
+      "url": "https://telegram.org",
+      "tags": [
+        "Telegram",
+        "广告",
+        "变现"
+      ],
+      "type": "模式",
+      "en": "TG Group Monetization",
+      "en_desc": "Monetize your Telegram groups"
+    },
+    {
+      "name": "跨境电商（速卖通）",
+      "desc": "Aliexpress 面向全球卖货，轻资产启动",
+      "url": "https://aliexpress.com",
+      "tags": [
+        "电商",
+        "跨境",
+        "卖货"
+      ],
+      "type": "平台",
+      "en": "Cross-border E-commerce",
+      "en_desc": "Sell globally on AliExpress"
+    },
+    {
+      "name": "加密货币空投/交互",
+      "desc": "参与新项目测试交互赚空投奖励",
+      "url": "https://airdropalert.com",
+      "tags": [
+        "空投",
+        "加密",
+        "测试"
+      ],
+      "type": "模式",
+      "en": "Crypto Airdrops",
+      "en_desc": "Earn from testnet interactions"
+    },
+    {
+      "name": "兼职翻译平台",
+      "desc": "Proz等平台接翻译工作，在家就能做",
+      "url": "https://proz.com",
+      "tags": [
+        "翻译",
+        "兼职",
+        "接单"
+      ],
+      "type": "平台",
+      "en": "Freelance Translation",
+      "en_desc": "Get paid for translations"
+    },
+    {
+      "name": "TikTok 创作者基金",
+      "desc": "TikTok 发短视频赚创作者基金",
+      "url": "https://tiktok.com",
+      "tags": [
+        "短视频",
+        "基金",
+        "全球"
+      ],
+      "type": "平台",
+      "en": "TikTok Creator Fund",
+      "en_desc": "Earn from short videos"
+    },
+    {
+      "name": "SEO 网站站群",
+      "desc": "建立多个网站做SEO获取搜索引擎流量变现",
+      "url": "https://ahrefs.com",
+      "tags": [
+        "SEO",
+        "网站",
+        "流量"
+      ],
+      "type": "模式",
+      "en": "SEO Website Network",
+      "en_desc": "Earn from search traffic"
+    },
+    {
+      "name": "美团/饿了么副业",
+      "desc": "业余跑外卖/送快递，时间灵活即时变现",
+      "url": "https://peisong.meituan.com",
+      "tags": [
+        "副业",
+        "跑腿",
+        "灵活"
+      ],
+      "type": "平台",
+      "en": "Meituan Delivery",
+      "en_desc": "Flexible delivery side hustle"
+    },
+    {
+      "name": "虚拟助理服务",
+      "desc": "帮人整理资料/做PPT/管理日程，时间换钱",
+      "url": "https://belay.com",
+      "tags": [
+        "助理",
+        "服务",
+        "远程"
+      ],
+      "type": "模式",
+      "en": "Virtual Assistant",
+      "en_desc": "Remote admin support"
+    },
+    {
+      "name": "Telegram 收费群",
+      "desc": "建付费Telegram群，月费制提供独家资源/指导",
+      "url": "https://telegram.org",
+      "tags": [
+        "付费群",
+        "独家",
+        "月费"
+      ],
+      "type": "模式",
+      "en": "TG Paid Groups",
+      "en_desc": "Monthly subscription groups"
+    },
+    {
+      "name": "抖音 创作基金",
+      "desc": "抖音发视频赚创作基金，积累粉丝后直播带货",
+      "url": "https://douyin.com",
+      "tags": [
+        "短视频",
+        "直播",
+        "带货"
+      ],
+      "type": "平台",
+      "en": "Douyin Creator Fund",
+      "en_desc": "Earn from Douyin videos"
+    },
+    {
+      "name": "Affiliate（淘宝联盟）",
+      "desc": "阿里妈妈旗下，推广淘宝商品赚佣金",
+      "url": "https://pub.alimama.com",
+      "tags": [
+        "推广",
+        "淘宝",
+        "佣金"
+      ],
+      "type": "平台",
+      "en": "Taobao Union",
+      "en_desc": "Alimama affiliate network"
+    },
+    {
+      "name": "跨境独立站 (Shopify)",
+      "desc": "搭建自己品牌的独立站卖货到全球",
+      "url": "https://shopify.com",
+      "tags": [
+        "建站",
+        "跨境",
+        "卖货"
+      ],
+      "type": "平台",
+      "en": "Cross-border Shopify",
+      "en_desc": "Build your global brand"
+    },
+    {
+      "name": "TikTok 电商带货",
+      "en": "TikTok Shop",
+      "en_desc": "Sell products on TikTok",
+      "desc": "TikTok 电商带货教程,短视频/直播带货,从0到1做TikTok Shop",
+      "url": "https://tiktok.com/shop",
+      "tags": [
+        "TikTok",
+        "带货",
+        "电商"
+      ]
+    },
+    {
+      "name": "抖音团购达人",
+      "en": "Douyin Group Buying",
+      "en_desc": "Earn from Douyin group deals",
+      "desc": "抖音团购达人,发探店视频赚佣金,0粉丝也能做,旅游吃喝玩乐全可",
+      "url": "https://douyin.com",
+      "tags": [
+        "抖音",
+        "团购",
+        "探店"
+      ]
+    },
+    {
+      "name": "微信红包封面",
+      "en": "WeChat Red Packet Covers",
+      "en_desc": "Sell WeChat cover designs",
+      "desc": "微信红包封面副业,节日期间需求量大,设计封面卖钱,轻资产小项目",
+      "url": "https://weixin.com",
+      "tags": [
+        "微信",
+        "红包",
+        "设计"
+      ]
+    },
+    {
+      "name": "视频号带货",
+      "en": "WeChat Video Monetization",
+      "en_desc": "Earn from WeChat videos",
+      "desc": "微信视频号带货,闭环生态/私域流量/直播,微信生态最新红利",
+      "url": "https://channels.weixin.qq.com",
+      "tags": [
+        "微信",
+        "视频号",
+        "带货"
+      ]
+    },
+    {
+      "name": "知乎付费咨询",
+      "en": "Zhihu Paid Consulting",
+      "en_desc": "Offer paid advice on Zhihu",
+      "desc": "知乎付费咨询,用专业知识回答问题赚钱,各领域专家都可以做",
+      "url": "https://zhihu.com",
+      "tags": [
+        "知乎",
+        "知识付费",
+        "咨询"
+      ]
+    },
+    {
+      "name": "小红书电商",
+      "en": "Xiaohongshu Shop",
+      "en_desc": "Sell on Little Red Book",
+      "desc": "小红书开店/笔记带货/直播带货,女性消费力强,客单价高,转化好",
+      "url": "https://xiaohongshu.com",
+      "tags": [
+        "小红书",
+        "电商",
+        "种草"
+      ]
+    },
+    {
+      "name": "闲鱼无货源",
+      "en": "Xianyu Dropshipping",
+      "en_desc": "Sell without inventory on Xianyu",
+      "desc": "闲鱼无货源模式,1688拼多多搬运赚差价,不囤货不压资金,新手首选",
+      "url": "https://2.taobao.com",
+      "tags": [
+        "闲鱼",
+        "无货源",
+        "副业"
+      ]
+    },
+    {
+      "name": "海外问卷调查",
+      "en": "Paid Surveys",
+      "en_desc": "Earn from market research",
+      "desc": "海外问卷调查赚钱,填问卷赚美金,一台电脑就能做,日结稳定",
+      "url": "https://survey.com",
+      "tags": [
+        "问卷",
+        "海外",
+        "美金"
+      ]
+    },
+    {
+      "name": "AI 绘画接单",
+      "en": "AI Art Freelance",
+      "en_desc": "Make money with AI art",
+      "desc": "AI 绘画接单,Midjourney/Stable Diffusion 出图,头像/海报/Logo设计",
+      "url": "https://midjourney.com",
+      "tags": [
+        "AI绘画",
+        "接单",
+        "副业"
+      ]
+    },
+    {
+      "name": "AI 写文案赚钱",
+      "en": "AI Content Writing",
+      "en_desc": "Write content with AI",
+      "desc": "用 ChatGPT/Claude 写文案接单,公众号/小红书/电商文案,效率翻倍",
+      "url": "https://chatgpt.com",
+      "tags": [
+        "AI写作",
+        "文案",
+        "副业"
+      ]
+    },
+    {
+      "name": "视频剪辑接单",
+      "en": "Video Editing Freelance",
+      "en_desc": "Edit videos for clients",
+      "desc": "短视频剪辑接单,剪映/PR 剪辑,抖音快手B站素材混剪,时薪高需求大",
+      "url": "https://jianying.com",
+      "tags": [
+        "剪辑",
+        "短视频",
+        "接单"
+      ]
+    },
+    {
+      "name": "配音/有声书",
+      "en": "Voice-over & Audiobooks",
+      "en_desc": "Record audiobooks for money",
+      "desc": "有声书/配音接单,喜马拉雅/懒人听书,好声音变现,在家录音即可",
+      "url": "https://ximalaya.com",
+      "tags": [
+        "配音",
+        "有声书",
+        "音频"
+      ]
+    },
+    {
+      "name": "GPT 应用开发",
+      "en": "GPT App Development",
+      "en_desc": "Build apps with GPT API",
+      "desc": "GPT API 开发赚钱,开发小工具/客服机器人/AI翻译等,月入数千很简单",
+      "url": "https://platform.openai.com",
+      "tags": [
+        "GPT",
+        "开发",
+        "API"
+      ]
+    },
+    {
+      "name": "淘宝闲鱼倒卖",
+      "en": "Taobao Arbitrage",
+      "en_desc": "Buy low sell high online",
+      "desc": "淘宝/1688/拼多多倒卖赚差,信息差/地域差/平台差,最经典的电商赚钱方式",
+      "url": "https://taobao.com",
+      "tags": [
+        "倒卖",
+        "电商",
+        "差价"
+      ]
+    },
+    {
+      "name": "百度网盘拉新",
+      "en": "Baidu Drive Referral",
+      "en_desc": "Earn from Baidu Drive referrals",
+      "desc": "百度网盘拉新推广,分享资源吸引用户开通会员,赚推广佣金,被动收入",
+      "url": "https://pan.baidu.com",
+      "tags": [
+        "网盘",
+        "拉新",
+        "推广"
+      ]
+    },
+    {
+      "name": "游戏陪玩/代练",
+      "en": "Game Boosting",
+      "en_desc": "Get paid to play games",
+      "desc": "游戏陪玩/代练/代肝,王者/原神/吃鸡等热门游戏,技术变现",
+      "url": "https://game.com",
+      "tags": [
+        "游戏",
+        "陪玩",
+        "代练"
+      ]
+    },
+    {
+      "name": "短剧推广",
+      "en": "Short Drama Promotion",
+      "en_desc": "Promote short dramas",
+      "desc": "短剧推广CPS,剪辑短剧片段分发到抖音快手,按充值分成,爆赚",
+      "url": "https://shortdrama.com",
+      "tags": [
+        "短剧",
+        "推广",
+        "CPS"
+      ]
+    },
+    {
+      "name": "小红书素人种草",
+      "en": "Xiaohongshu Seeding",
+      "en_desc": "Get paid product reviews",
+      "desc": "小红书素人种草接单,500粉就能接,品牌方送产品+稿费,零成本副业",
+      "url": "https://xiaohongshu.com",
+      "tags": [
+        "小红书",
+        "种草",
+        "素人"
+      ]
+    },
+    {
+      "name": "宠物寄养/遛狗",
+      "en": "Pet Sitting",
+      "en_desc": "Earn from pet care",
+      "desc": "宠物寄养/遛狗/上门喂养,节假日需求旺盛,喜欢动物顺便赚钱",
+      "url": "https://pet.com",
+      "tags": [
+        "宠物",
+        "寄养",
+        "遛狗"
+      ]
+    },
+    {
+      "name": "手机拍照赚钱",
+      "en": "Stock Photography",
+      "en_desc": "Sell phone photos online",
+      "desc": "手机拍照上传图库赚钱,不需要专业相机,日常拍的照片也能卖钱",
+      "url": "https://shutterstock.com",
+      "tags": [
+        "摄影",
+        "图库",
+        "被动收入"
+      ]
+    },
+    {
+      "name": "知识付费做课",
+      "en": "Online Course Creation",
+      "en_desc": "Create and sell courses",
+      "desc": "把自己的技能做成课程卖,小鹅通/知识星球/得到,一次制作反复卖",
+      "url": "https://xiaoetong.com",
+      "tags": [
+        "知识付费",
+        "课程",
+        "教育"
+      ]
+    },
+    {
+      "name": "本地探店推广",
+      "en": "Local Business Promotion",
+      "en_desc": "Promote local businesses",
+      "desc": "本地探店/美食推广,抖音/小红书发探店视频,商家给推广费加免费吃喝",
+      "url": "https://tandian.com",
+      "tags": [
+        "探店",
+        "本地",
+        "美食"
+      ]
+    },
+    {
+      "name": "跨境电商TikTok",
+      "en": "Cross-border TikTok",
+      "en_desc": "Sell globally on TikTok",
+      "desc": "TikTok 跨境电商,TikTok Shop 美区/东南亚,短视频/直播带货出海",
+      "url": "https://tiktok.com",
+      "tags": [
+        "TikTok",
+        "跨境",
+        "电商"
+      ]
+    },
+    {
+      "name": "公众号流量主",
+      "en": "WeChat Ads Income",
+      "en_desc": "Earn from WeChat articles",
+      "desc": "公众号流量主,写文章插广告赚收益,哪怕100粉丝也能开通变现",
+      "url": "https://mp.weixin.qq.com",
+      "tags": [
+        "公众号",
+        "流量主",
+        "写作"
+      ]
+    },
+    {
+      "name": "QQ 社群变现",
+      "en": "QQ Group Monetization",
+      "en_desc": "Monetize QQ groups",
+      "desc": "QQ 群变现方式,付费进群/贵族/群课堂,QQ 生态仍然有大量流量红利",
+      "url": "https://qun.qq.com",
+      "tags": [
+        "QQ",
+        "社群",
+        "变现"
+      ]
+    },
+    {
+      "name": "WPS 稻壳模板",
+      "en": "WPS Template Sales",
+      "en_desc": "Sell WPS templates",
+      "desc": "WPS 稻壳儿上传模板赚钱,PPT/Word/Excel模板上传即卖,被动收入",
+      "url": "https://docer.wps.cn",
+      "tags": [
+        "WPS",
+        "模板",
+        "被动收入"
+      ]
+    },
+    {
+      "name": "表情包制作",
+      "en": "Sticker Making",
+      "en_desc": "Design stickers for money",
+      "desc": "微信表情包/Line贴图制作,一次上传长期收益,适合设计师和插画师",
+      "url": "https://weixin.com",
+      "tags": [
+        "表情包",
+        "设计",
+        "被动收入"
+      ]
+    },
+    {
+      "name": "AI 数字人带货",
+      "en": "AI Avatar Selling",
+      "en_desc": "AI digital human selling",
+      "desc": "AI 数字人直播带货,HeyGen/数字人克隆,24小时不停播,躺着赚钱",
+      "url": "https://heygen.com",
+      "tags": [
+        "AI数字人",
+        "直播",
+        "带货"
+      ]
+    },
+    {
+      "name": "资源付费分享",
+      "en": "Resource Sharing",
+      "en_desc": "Sell digital resources",
+      "desc": "电子书/课程/模板/软件等资源打包付费分享,一次整理反复赚钱",
+      "url": "https://resource.com",
+      "tags": [
+        "资源",
+        "分享",
+        "付费"
+      ]
+    },
+    {
+      "name": "任务/调查平台",
+      "en": "Microtask Platforms",
+      "en_desc": "Earn from microtasks",
+      "desc": "众包/微任务平台,数据标注/问卷调查/APP试玩/语音采集,碎片时间赚钱",
+      "url": "https://microtask.com",
+      "tags": [
+        "微任务",
+        "众包",
+        "碎片时间"
+      ]
+    }
+  ],
   "电子书资源": [
     {
       "name": "Z-Library",
@@ -3106,398 +3858,6 @@
       "type": "软件",
       "en": "uTools",
       "en_desc": "Chinese productivity launcher"
-    }
-  ],
-  "搞钱/副业资源": [
-    {
-      "name": "Upwork",
-      "desc": "全球最大自由职业平台，接单做翻译/设计/编程",
-      "url": "https://upwork.com",
-      "tags": [
-        "接单",
-        "全球",
-        "自由职业"
-      ],
-      "type": "平台",
-      "en": "Upwork",
-      "en_desc": "World's largest freelancing platform"
-    },
-    {
-      "name": "Fiverr",
-      "desc": "全球零工平台，卖服务从$5起",
-      "url": "https://fiverr.com",
-      "tags": [
-        "接单",
-        "零工",
-        "服务"
-      ],
-      "type": "平台",
-      "en": "Fiverr",
-      "en_desc": "Global gig marketplace from $5"
-    },
-    {
-      "name": "猪八戒网",
-      "desc": "国内最大服务交易平台",
-      "url": "https://zbj.com",
-      "tags": [
-        "接单",
-        "国内",
-        "服务"
-      ],
-      "type": "平台",
-      "en": "Zhubajie",
-      "en_desc": "China's largest service marketplace"
-    },
-    {
-      "name": "闲鱼",
-      "desc": "二手交易平台，也可卖虚拟资料/课程/代找资源",
-      "url": "https://goofish.com",
-      "tags": [
-        "二手",
-        "卖货",
-        "虚拟"
-      ],
-      "type": "平台",
-      "en": "Xianyu",
-      "en_desc": "Alibaba's second-hand & digital goods"
-    },
-    {
-      "name": "小红书 引流变现",
-      "desc": "小红书做内容号，积累粉丝后接广告/带货",
-      "url": "https://xiaohongshu.com",
-      "tags": [
-        "内容",
-        "引流",
-        "带货"
-      ],
-      "type": "平台",
-      "en": "Xiaohongshu Monetization",
-      "en_desc": "Content → followers → money"
-    },
-    {
-      "name": "公众号流量主",
-      "desc": "微信写公众号，500粉开通流量主广告收益",
-      "url": "https://mp.weixin.qq.com",
-      "tags": [
-        "写作",
-        "流量主",
-        "广告"
-      ],
-      "type": "平台",
-      "en": "WeChat Official Account Ads",
-      "en_desc": "Earn from WeChat articles"
-    },
-    {
-      "name": "YouTube 广告分成",
-      "desc": "YouTube创收，1000粉+4000小时可开通广告",
-      "url": "https://youtube.com",
-      "tags": [
-        "视频",
-        "广告",
-        "全球"
-      ],
-      "type": "平台",
-      "en": "YouTube Ad Revenue",
-      "en_desc": "Earn from video ads"
-    },
-    {
-      "name": "Google AdSense",
-      "desc": "网站/博客放广告赚广告费，有流量就有收入",
-      "url": "https://adsense.google.com",
-      "tags": [
-        "广告",
-        "网站",
-        "被动"
-      ],
-      "type": "平台",
-      "en": "Google AdSense",
-      "en_desc": "Earn from website ads"
-    },
-    {
-      "name": "Shopify 开店",
-      "desc": "建立自己的在线商店，14天免费试用",
-      "url": "https://shopify.com",
-      "tags": [
-        "开店",
-        "电商",
-        "建站"
-      ],
-      "type": "平台",
-      "en": "Shopify",
-      "en_desc": "Build your online store"
-    },
-    {
-      "name": "Etsy 手工艺品",
-      "desc": "卖手工制品/数字产品/设计模板，全球买家",
-      "url": "https://etsy.com",
-      "tags": [
-        "手工艺",
-        "设计",
-        "全球"
-      ],
-      "type": "平台",
-      "en": "Etsy",
-      "en_desc": "Sell handmade & digital globally"
-    },
-    {
-      "name": "Affiliate 联盟营销",
-      "desc": "推广产品拿佣金，Amazon/淘宝客/各类AI工具",
-      "url": "https://affiliate-program.amazon.com",
-      "tags": [
-        "推广",
-        "佣金",
-        "联盟"
-      ],
-      "type": "模式",
-      "en": "Affiliate Marketing",
-      "en_desc": "Earn commissions promoting products"
-    },
-    {
-      "name": "知识星球",
-      "desc": "付费社群工具，沉淀干货/问答/资源分享",
-      "url": "https://zsxq.com",
-      "tags": [
-        "社群",
-        "付费",
-        "知识"
-      ],
-      "type": "平台",
-      "en": "Zsxq - Paid Community",
-      "en_desc": "Premium content community platform"
-    },
-    {
-      "name": "小鹅通",
-      "desc": "卖课程/专栏/社群会员，知识变现工具",
-      "url": "https://xiaoe-tech.com",
-      "tags": [
-        "课程",
-        "知识付费",
-        "社群"
-      ],
-      "type": "平台",
-      "en": "XiaoE Tech",
-      "en_desc": "Sell courses & memberships"
-    },
-    {
-      "name": "知乎好物推荐",
-      "desc": "知乎写回答插入商品链接赚佣金",
-      "url": "https://zhihu.com",
-      "tags": [
-        "写作",
-        "推荐",
-        "佣金"
-      ],
-      "type": "平台",
-      "en": "Zhihu Product Recs",
-      "en_desc": "Earn from Zhihu article links"
-    },
-    {
-      "name": "程序员接单（程序员客栈）",
-      "desc": "国内程序员接外包项目平台",
-      "url": "https://proginn.com",
-      "tags": [
-        "编程",
-        "接单",
-        "外包"
-      ],
-      "type": "平台",
-      "en": "Proginn - Freelance Coding",
-      "en_desc": "China's dev outsourcing platform"
-    },
-    {
-      "name": "淘宝客",
-      "desc": "推广淘宝商品拿佣金，适合有流量渠道的人",
-      "url": "https://alimama.com",
-      "tags": [
-        "推广",
-        "淘宝",
-        "佣金"
-      ],
-      "type": "平台",
-      "en": "Taobao Affiliate",
-      "en_desc": "Earn promoting Taobao products"
-    },
-    {
-      "name": "摄影图库（Shutterstock等）",
-      "desc": "卖照片/插画素材，一次上传多次被动收入",
-      "url": "https://shutterstock.com",
-      "tags": [
-        "摄影",
-        "素材",
-        "被动"
-      ],
-      "type": "平台",
-      "en": "Stock Photography",
-      "en_desc": "Passive income from photos"
-    },
-    {
-      "name": "配音/有声书接单",
-      "desc": "喜马拉雅/懒人听书等平台录制有声书赚稿费",
-      "url": "https://ximalaya.com",
-      "tags": [
-        "配音",
-        "有声书",
-        "录制"
-      ],
-      "type": "平台",
-      "en": "Voice-over & Audiobook",
-      "en_desc": "Record audiobooks for money"
-    },
-    {
-      "name": "Telegram 群组变现",
-      "desc": "通过TG群/频道做广告位/付费会员/导航变现",
-      "url": "https://telegram.org",
-      "tags": [
-        "Telegram",
-        "广告",
-        "变现"
-      ],
-      "type": "模式",
-      "en": "TG Group Monetization",
-      "en_desc": "Monetize your Telegram groups"
-    },
-    {
-      "name": "跨境电商（速卖通）",
-      "desc": "Aliexpress 面向全球卖货，轻资产启动",
-      "url": "https://aliexpress.com",
-      "tags": [
-        "电商",
-        "跨境",
-        "卖货"
-      ],
-      "type": "平台",
-      "en": "Cross-border E-commerce",
-      "en_desc": "Sell globally on AliExpress"
-    },
-    {
-      "name": "加密货币空投/交互",
-      "desc": "参与新项目测试交互赚空投奖励",
-      "url": "https://airdropalert.com",
-      "tags": [
-        "空投",
-        "加密",
-        "测试"
-      ],
-      "type": "模式",
-      "en": "Crypto Airdrops",
-      "en_desc": "Earn from testnet interactions"
-    },
-    {
-      "name": "兼职翻译平台",
-      "desc": "Proz等平台接翻译工作，在家就能做",
-      "url": "https://proz.com",
-      "tags": [
-        "翻译",
-        "兼职",
-        "接单"
-      ],
-      "type": "平台",
-      "en": "Freelance Translation",
-      "en_desc": "Get paid for translations"
-    },
-    {
-      "name": "TikTok 创作者基金",
-      "desc": "TikTok 发短视频赚创作者基金",
-      "url": "https://tiktok.com",
-      "tags": [
-        "短视频",
-        "基金",
-        "全球"
-      ],
-      "type": "平台",
-      "en": "TikTok Creator Fund",
-      "en_desc": "Earn from short videos"
-    },
-    {
-      "name": "SEO 网站站群",
-      "desc": "建立多个网站做SEO获取搜索引擎流量变现",
-      "url": "https://ahrefs.com",
-      "tags": [
-        "SEO",
-        "网站",
-        "流量"
-      ],
-      "type": "模式",
-      "en": "SEO Website Network",
-      "en_desc": "Earn from search traffic"
-    },
-    {
-      "name": "美团/饿了么副业",
-      "desc": "业余跑外卖/送快递，时间灵活即时变现",
-      "url": "https://peisong.meituan.com",
-      "tags": [
-        "副业",
-        "跑腿",
-        "灵活"
-      ],
-      "type": "平台",
-      "en": "Meituan Delivery",
-      "en_desc": "Flexible delivery side hustle"
-    },
-    {
-      "name": "虚拟助理服务",
-      "desc": "帮人整理资料/做PPT/管理日程，时间换钱",
-      "url": "https://belay.com",
-      "tags": [
-        "助理",
-        "服务",
-        "远程"
-      ],
-      "type": "模式",
-      "en": "Virtual Assistant",
-      "en_desc": "Remote admin support"
-    },
-    {
-      "name": "Telegram 收费群",
-      "desc": "建付费Telegram群，月费制提供独家资源/指导",
-      "url": "https://telegram.org",
-      "tags": [
-        "付费群",
-        "独家",
-        "月费"
-      ],
-      "type": "模式",
-      "en": "TG Paid Groups",
-      "en_desc": "Monthly subscription groups"
-    },
-    {
-      "name": "抖音 创作基金",
-      "desc": "抖音发视频赚创作基金，积累粉丝后直播带货",
-      "url": "https://douyin.com",
-      "tags": [
-        "短视频",
-        "直播",
-        "带货"
-      ],
-      "type": "平台",
-      "en": "Douyin Creator Fund",
-      "en_desc": "Earn from Douyin videos"
-    },
-    {
-      "name": "Affiliate（淘宝联盟）",
-      "desc": "阿里妈妈旗下，推广淘宝商品赚佣金",
-      "url": "https://pub.alimama.com",
-      "tags": [
-        "推广",
-        "淘宝",
-        "佣金"
-      ],
-      "type": "平台",
-      "en": "Taobao Union",
-      "en_desc": "Alimama affiliate network"
-    },
-    {
-      "name": "跨境独立站 (Shopify)",
-      "desc": "搭建自己品牌的独立站卖货到全球",
-      "url": "https://shopify.com",
-      "tags": [
-        "建站",
-        "跨境",
-        "卖货"
-      ],
-      "type": "平台",
-      "en": "Cross-border Shopify",
-      "en_desc": "Build your global brand"
     }
   ],
   "影视/流媒体资源": [

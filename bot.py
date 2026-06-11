@@ -16,13 +16,13 @@ with open(RESOURCES_FILE, "r", encoding="utf-8") as f:
     RESOURCES = json.load(f)
 
 CATEGORIES = list(RESOURCES.keys())
-CATEGORY_EMOJIS = {"电子书资源":"📚","学习资源":"🎓","设计素材":"🎨","软件工具":"💻","AI工具":"🤖","效率模板":"📋","搞钱/副业资源":"💰",
+CATEGORY_EMOJIS = {"搞钱/副业资源":"💰","电子书资源":"📚","学习资源":"🎓","设计素材":"🎨","软件工具":"💻","AI工具":"🤖","效率模板":"📋",
     "影视/流媒体资源":"🎬","手机App/工具":"📱","购物/优惠":"🏪","建站/域名":"🌐",
     "TG 优质频道推荐":"📢","PPT/简历/合同模板":"📄","在线工具大全":"🔧","数据分析/可视化":"📊"}
-CATEGORY_EN = {"电子书资源":"Free E-books & PDFs","学习资源":"Free Online Courses","设计素材":"Free Design Assets","软件工具":"Free Software","AI工具":"Free AI Tools","效率模板":"Free Productivity","搞钱/副业资源":"Make Money Online",
+CATEGORY_EN = {"搞钱/副业资源":"Make Money Online","电子书资源":"Free E-books & PDFs","学习资源":"Free Online Courses","设计素材":"Free Design Assets","软件工具":"Free Software","AI工具":"Free AI Tools","效率模板":"Free Productivity",
     "影视/流媒体资源":"Free Movies & Streaming","手机App/工具":"Mobile Apps & Tools","购物/优惠":"Shopping & Coupons","建站/域名":"Hosting & Domains",
     "TG 优质频道推荐":"Best TG Channels","PPT/简历/合同模板":"Templates & Resumes","在线工具大全":"Online Tools Collection","数据分析/可视化":"Data Analysis & Viz"}
-CN_FREE = {"电子书资源":"免费电子书","学习资源":"免费课程","设计素材":"免费设计素材","软件工具":"免费软件","AI工具":"免费AI工具","效率模板":"免费效率模板","搞钱/副业资源":"搞钱副业",
+CN_FREE = {"搞钱/副业资源":"搞钱副业","电子书资源":"免费电子书","学习资源":"免费课程","设计素材":"免费设计素材","软件工具":"免费软件","AI工具":"免费AI工具","效率模板":"免费效率模板",
     "影视/流媒体资源":"免费影视流媒体","手机App/工具":"手机App工具","购物/优惠":"购物优惠省钱","建站/域名":"建站域名托管",
     "TG 优质频道推荐":"优质TG频道","PPT/简历/合同模板":"模板简历合同","在线工具大全":"在线工具箱","数据分析/可视化":"数据分析可视化"}
 
