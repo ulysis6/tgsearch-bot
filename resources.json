@@ -1,201 +1,2423 @@
 {
   "电子书资源": [
-    {"name": "Z-Library", "desc": "全球最大电子书库，上百万本免费下载，需用镜像站访问", "url": "https://z-lib.io", "tags": ["电子书", "综合"], "type": "站点"},
-    {"name": "安娜的档案 (Anna's Archive)", "desc": "Z-Library 和 Sci-Hub 的聚合搜索引擎，数据最全", "url": "https://annas-archive.org", "tags": ["电子书", "论文", "综合"], "type": "站点"},
-    {"name": "Project Gutenberg", "desc": "6万+版权过期的经典电子书，完全合法免费", "url": "https://gutenberg.org", "tags": ["电子书", "经典", "英文"], "type": "站点"},
-    {"name": "PDF Drive", "desc": "8000万+PDF文件搜索引擎，无需注册", "url": "https://pdfdrive.net", "tags": ["电子书", "PDF", "综合"], "type": "站点"},
-    {"name": "Library Genesis", "desc": "老牌学术电子书库，教材/科技类资源丰富", "url": "https://libgen.is", "tags": ["电子书", "教材", "学术"], "type": "站点"},
-    {"name": "国学大师", "desc": "中华古籍全文检索，经史子集全收录", "url": "https://guoxuedashi.com", "tags": ["电子书", "国学", "中文"], "type": "站点"},
-    {"name": "鸠摩搜书", "desc": "中文电子书聚合搜索引擎，轻量好用", "url": "https://jiumodiary.com", "tags": ["电子书", "中文", "综合"], "type": "站点"},
-    {"name": "ManyBooks", "desc": "5万+免费电子书，支持多种格式下载", "url": "https://manybooks.net", "tags": ["电子书", "多格式", "英文"], "type": "站点"},
-    {"name": "Open Library", "desc": "互联网档案馆旗下的电子书借阅平台", "url": "https://openlibrary.org", "tags": ["电子书", "借阅", "综合"], "type": "站点"},
-    {"name": "Standard Ebooks", "desc": "精心排版校对的经典电子书，品质极高", "url": "https://standardebooks.org", "tags": ["电子书", "精排", "经典"], "type": "站点"},
-    {"name": "Wikisource", "desc": "维基文库，自由版权文本资源库", "url": "https://wikisource.org", "tags": ["电子书", "多语言", "自由版权"], "type": "站点"},
-    {"name": "古籍馆", "desc": "中国古籍数字图书馆，可在线阅读", "url": "https://gujiguan.com", "tags": ["电子书", "古籍", "中文"], "type": "站点"},
-    {"name": "Feedbooks", "desc": "免费电子书下载平台，支持推送至 Kindle", "url": "https://feedbooks.com", "tags": ["电子书", "Kindle", "综合"], "type": "站点"},
-    {"name": "Smashwords", "desc": "独立作者电子书平台，大量免费内容", "url": "https://smashwords.com", "tags": ["电子书", "独立作者", "综合"], "type": "站点"},
-    {"name": "eBook3000", "desc": "免费电子书资源站，分类详细", "url": "https://ebook3000.com", "tags": ["电子书", "综合", "分类"], "type": "站点"},
-    {"name": "Wikibooks", "desc": "维基教科书，自由编写的开放教材", "url": "https://en.wikibooks.org", "tags": ["电子书", "教材", "开源"], "type": "站点"},
-    {"name": "Free-eBooks.net", "desc": "注册后可免费下载电子书，含畅销书", "url": "https://free-ebooks.net", "tags": ["电子书", "注册", "综合"], "type": "站点"},
-    {"name": "obooko", "desc": "免费电子书资源，分类含小说/非小说", "url": "https://obooko.com", "tags": ["电子书", "小说", "非小说"], "type": "站点"},
-    {"name": "LearnOutLoud", "desc": "免费有声书和学习音频资源", "url": "https://learnoutloud.com", "tags": ["电子书", "有声书", "教育"], "type": "站点"},
-    {"name": "豆瓣阅读 免费", "desc": "豆瓣阅读的免费短篇/连载作品", "url": "https://read.douban.com", "tags": ["电子书", "中文", "短篇"], "type": "平台"}
+    {
+      "name": "Z-Library",
+      "desc": "全球最大电子书库，上百万本免费下载，需用镜像站访问",
+      "url": "https://z-lib.io",
+      "tags": [
+        "电子书",
+        "综合"
+      ],
+      "type": "站点",
+      "en": "Z-Library",
+      "en_desc": "World's largest free ebook library, millions of books"
+    },
+    {
+      "name": "安娜的档案 (Anna's Archive)",
+      "desc": "Z-Library 和 Sci-Hub 的聚合搜索引擎，数据最全",
+      "url": "https://annas-archive.org",
+      "tags": [
+        "电子书",
+        "论文",
+        "综合"
+      ],
+      "type": "站点",
+      "en": "Anna's Archive",
+      "en_desc": "Aggregated search for Z-Library & Sci-Hub"
+    },
+    {
+      "name": "Project Gutenberg",
+      "desc": "6万+版权过期的经典电子书，完全合法免费",
+      "url": "https://gutenberg.org",
+      "tags": [
+        "电子书",
+        "经典",
+        "英文"
+      ],
+      "type": "站点",
+      "en": "Project Gutenberg",
+      "en_desc": "60,000+ free classic ebooks, completely legal"
+    },
+    {
+      "name": "PDF Drive",
+      "desc": "8000万+PDF文件搜索引擎，无需注册",
+      "url": "https://pdfdrive.net",
+      "tags": [
+        "电子书",
+        "PDF",
+        "综合"
+      ],
+      "type": "站点",
+      "en": "PDF Drive",
+      "en_desc": "80M+ PDF search engine, no registration needed"
+    },
+    {
+      "name": "Library Genesis",
+      "desc": "老牌学术电子书库，教材/科技类资源丰富",
+      "url": "https://libgen.is",
+      "tags": [
+        "电子书",
+        "教材",
+        "学术"
+      ],
+      "type": "站点",
+      "en": "Library Genesis",
+      "en_desc": "Well-known academic ebook library, rich in textbooks"
+    },
+    {
+      "name": "国学大师",
+      "desc": "中华古籍全文检索，经史子集全收录",
+      "url": "https://guoxuedashi.com",
+      "tags": [
+        "电子书",
+        "国学",
+        "中文"
+      ],
+      "type": "站点",
+      "en": "Guoxue Dashi",
+      "en_desc": "Full-text Chinese ancient classics search"
+    },
+    {
+      "name": "鸠摩搜书",
+      "desc": "中文电子书聚合搜索引擎，轻量好用",
+      "url": "https://jiumodiary.com",
+      "tags": [
+        "电子书",
+        "中文",
+        "综合"
+      ],
+      "type": "站点",
+      "en": "Jiumo Search",
+      "en_desc": "Chinese ebook search engine, lightweight"
+    },
+    {
+      "name": "ManyBooks",
+      "desc": "5万+免费电子书，支持多种格式下载",
+      "url": "https://manybooks.net",
+      "tags": [
+        "电子书",
+        "多格式",
+        "英文"
+      ],
+      "type": "站点",
+      "en": "ManyBooks",
+      "en_desc": "50,000+ free ebooks, multiple formats"
+    },
+    {
+      "name": "Open Library",
+      "desc": "互联网档案馆旗下的电子书借阅平台",
+      "url": "https://openlibrary.org",
+      "tags": [
+        "电子书",
+        "借阅",
+        "综合"
+      ],
+      "type": "站点",
+      "en": "Open Library",
+      "en_desc": "Internet Archive's free ebook lending platform"
+    },
+    {
+      "name": "Standard Ebooks",
+      "desc": "精心排版校对的经典电子书，品质极高",
+      "url": "https://standardebooks.org",
+      "tags": [
+        "电子书",
+        "精排",
+        "经典"
+      ],
+      "type": "站点",
+      "en": "Standard Ebooks",
+      "en_desc": "Highest quality formatted classic ebooks"
+    },
+    {
+      "name": "Wikisource",
+      "desc": "维基文库，自由版权文本资源库",
+      "url": "https://wikisource.org",
+      "tags": [
+        "电子书",
+        "多语言",
+        "自由版权"
+      ],
+      "type": "站点",
+      "en": "Wikisource",
+      "en_desc": "Wikimedia free text library, multilingual"
+    },
+    {
+      "name": "古籍馆",
+      "desc": "中国古籍数字图书馆，可在线阅读",
+      "url": "https://gujiguan.com",
+      "tags": [
+        "电子书",
+        "古籍",
+        "中文"
+      ],
+      "type": "站点",
+      "en": "Ancient Books Museum",
+      "en_desc": "Digital Chinese ancient books, read online"
+    },
+    {
+      "name": "Feedbooks",
+      "desc": "免费电子书下载平台，支持推送至 Kindle",
+      "url": "https://feedbooks.com",
+      "tags": [
+        "电子书",
+        "Kindle",
+        "综合"
+      ],
+      "type": "站点",
+      "en": "Feedbooks",
+      "en_desc": "Free ebooks, supports Kindle push"
+    },
+    {
+      "name": "Smashwords",
+      "desc": "独立作者电子书平台，大量免费内容",
+      "url": "https://smashwords.com",
+      "tags": [
+        "电子书",
+        "独立作者",
+        "综合"
+      ],
+      "type": "站点",
+      "en": "Smashwords",
+      "en_desc": "Independent author ebooks, lots of free content"
+    },
+    {
+      "name": "eBook3000",
+      "desc": "免费电子书资源站，分类详细",
+      "url": "https://ebook3000.com",
+      "tags": [
+        "电子书",
+        "综合",
+        "分类"
+      ],
+      "type": "站点",
+      "en": "eBook3000",
+      "en_desc": "Free ebook resource, detailed categories"
+    },
+    {
+      "name": "Wikibooks",
+      "desc": "维基教科书，自由编写的开放教材",
+      "url": "https://en.wikibooks.org",
+      "tags": [
+        "电子书",
+        "教材",
+        "开源"
+      ],
+      "type": "站点",
+      "en": "Wikibooks",
+      "en_desc": "Wikimedia open textbooks"
+    },
+    {
+      "name": "Free-eBooks.net",
+      "desc": "注册后可免费下载电子书，含畅销书",
+      "url": "https://free-ebooks.net",
+      "tags": [
+        "电子书",
+        "注册",
+        "综合"
+      ],
+      "type": "站点",
+      "en": "Free-eBooks.net",
+      "en_desc": "Free ebooks, includes bestsellers"
+    },
+    {
+      "name": "obooko",
+      "desc": "免费电子书资源，分类含小说/非小说",
+      "url": "https://obooko.com",
+      "tags": [
+        "电子书",
+        "小说",
+        "非小说"
+      ],
+      "type": "站点",
+      "en": "Obooko",
+      "en_desc": "Free fiction & non-fiction ebooks"
+    },
+    {
+      "name": "LearnOutLoud",
+      "desc": "免费有声书和学习音频资源",
+      "url": "https://learnoutloud.com",
+      "tags": [
+        "电子书",
+        "有声书",
+        "教育"
+      ],
+      "type": "站点",
+      "en": "LearnOutLoud",
+      "en_desc": "Free audiobooks & learning audio"
+    },
+    {
+      "name": "豆瓣阅读 免费",
+      "desc": "豆瓣阅读的免费短篇/连载作品",
+      "url": "https://read.douban.com",
+      "tags": [
+        "电子书",
+        "中文",
+        "短篇"
+      ],
+      "type": "平台",
+      "en": "Douban Read Free",
+      "en_desc": "Free short stories & serials"
+    }
   ],
   "学习资源": [
-    {"name": "Coursera", "desc": "全球顶级大学在线课程，大量免费旁听", "url": "https://coursera.org", "tags": ["课程", "大学", "多语言"], "type": "平台"},
-    {"name": "edX", "desc": "MIT/哈佛等名校课程平台，免费旁听", "url": "https://edx.org", "tags": ["课程", "名校", "免费"], "type": "平台"},
-    {"name": "Khan Academy", "desc": "可汗学院，完全免费的中小学/大学基础课", "url": "https://khanacademy.org", "tags": ["K12", "数学", "科学", "免费"], "type": "平台"},
-    {"name": "中国大学MOOC", "desc": "国内985/211高校的在线课程平台", "url": "https://icourse163.org", "tags": ["课程", "中文", "大学"], "type": "平台"},
-    {"name": "学堂在线", "desc": "清华大学发起的在线课程平台", "url": "https://xuetangx.com", "tags": ["课程", "中文", "清华"], "type": "平台"},
-    {"name": "MIT OpenCourseWare", "desc": "麻省理工学院全部课程资料免费开放", "url": "https://ocw.mit.edu", "tags": ["课程", "MIT", "免费"], "type": "平台"},
-    {"name": "Crash Course", "desc": "Youtube 上的高质量速成课程系列", "url": "https://thecrashcourse.com", "tags": ["视频", "科普", "速成"], "type": "频道"},
-    {"name": "3Blue1Brown", "desc": "精美动画讲解数学/编程本质", "url": "https://3blue1brown.com", "tags": ["数学", "动画", "编程"], "type": "频道"},
-    {"name": "freeCodeCamp", "desc": "全栈编程免费课程 + 交互式练习", "url": "https://freecodecamp.org", "tags": ["编程", "全栈", "免费"], "type": "平台"},
-    {"name": "Codecademy", "desc": "交互式编程学习平台，基础课程免费", "url": "https://codecademy.com", "tags": ["编程", "交互", "入门"], "type": "平台"},
-    {"name": "O'Reilly 免费学习", "desc": "O'Reilly 出版社的部分免费技术书和课程", "url": "https://oreilly.com/free", "tags": ["编程", "技术", "免费"], "type": "平台"},
-    {"name": "Bilibili", "desc": "大量免费高质量教程，搜任一技能都有海量资源", "url": "https://bilibili.com", "tags": ["综合", "视频", "中文"], "type": "平台"},
-    {"name": "YouTube 学习频道", "desc": "全球最大的视频学习平台，搜一切学习内容", "url": "https://youtube.com", "tags": ["综合", "视频", "全语言"], "type": "平台"},
-    {"name": "Scrimba", "desc": "交互式前端编程课程，可暂停编辑代码", "url": "https://scrimba.com", "tags": ["编程", "前端", "交互"], "type": "平台"},
-    {"name": "Duolingo", "desc": "游戏化语言学习应用，完全免费", "url": "https://duolingo.com", "tags": ["语言", "游戏化", "免费"], "type": "应用"},
-    {"name": "ArXiv", "desc": "全球最大学术论文预印本平台，免费获取最新论文", "url": "https://arxiv.org", "tags": ["论文", "学术", "免费"], "type": "平台"},
-    {"name": "Sci-Hub", "desc": "绕过付费墙获取学术论文的网站", "url": "https://sci-hub.se", "tags": ["论文", "学术", "免费"], "type": "站点"},
-    {"name": "ResearchGate", "desc": "研究人员社交平台，可免费向作者索取论文", "url": "https://researchgate.net", "tags": ["论文", "社交", "学术"], "type": "平台"},
-    {"name": "TED Talks", "desc": "各领域专家的短演讲，中文字幕齐备", "url": "https://ted.com", "tags": ["演讲", "科普", "TED"], "type": "平台"},
-    {"name": "BBC Learning English", "desc": "BBC出品的免费英语学习资源", "url": "https://bbc.co.uk/learningenglish", "tags": ["英语", "学习", "免费"], "type": "平台"},
-    {"name": "Stack Overflow", "desc": "程序员问答社区，几乎任何编程问题都能搜到答案", "url": "https://stackoverflow.com", "tags": ["编程", "问答", "社区"], "type": "社区"},
-    {"name": "DevDocs", "desc": "开发者文档聚合，离线可查", "url": "https://devdocs.io", "tags": ["编程", "文档", "离线"], "type": "工具"},
-    {"name": "GitHub Education", "desc": "学生包：免费域名/免费服务器/免费开发工具", "url": "https://education.github.com", "tags": ["编程", "学生", "免费工具"], "type": "平台"},
-    {"name": "Lingoda", "desc": "在线语言学校，免费试听课", "url": "https://lingoda.com", "tags": ["语言", "课程", "直播"], "type": "平台"},
-    {"name": "W3Schools", "desc": "前端开发在线教程（HTML/CSS/JS），免费好用", "url": "https://w3schools.com", "tags": ["编程", "前端", "教程"], "type": "平台"}
+    {
+      "name": "Coursera",
+      "desc": "全球顶级大学在线课程，大量免费旁听",
+      "url": "https://coursera.org",
+      "tags": [
+        "课程",
+        "大学",
+        "多语言"
+      ],
+      "type": "平台",
+      "en": "Coursera",
+      "en_desc": "Top university courses, free audit"
+    },
+    {
+      "name": "edX",
+      "desc": "MIT/哈佛等名校课程平台，免费旁听",
+      "url": "https://edx.org",
+      "tags": [
+        "课程",
+        "名校",
+        "免费"
+      ],
+      "type": "平台",
+      "en": "edX",
+      "en_desc": "MIT/Harvard courses, free to audit"
+    },
+    {
+      "name": "Khan Academy",
+      "desc": "可汗学院，完全免费的中小学/大学基础课",
+      "url": "https://khanacademy.org",
+      "tags": [
+        "K12",
+        "数学",
+        "科学",
+        "免费"
+      ],
+      "type": "平台",
+      "en": "Khan Academy",
+      "en_desc": "Free K-12 & college prep, world-class"
+    },
+    {
+      "name": "中国大学MOOC",
+      "desc": "国内985/211高校的在线课程平台",
+      "url": "https://icourse163.org",
+      "tags": [
+        "课程",
+        "中文",
+        "大学"
+      ],
+      "type": "平台",
+      "en": "Chinese University MOOC",
+      "en_desc": "985/211 university online courses"
+    },
+    {
+      "name": "学堂在线",
+      "desc": "清华大学发起的在线课程平台",
+      "url": "https://xuetangx.com",
+      "tags": [
+        "课程",
+        "中文",
+        "清华"
+      ],
+      "type": "平台",
+      "en": "XuetangX",
+      "en_desc": "Tsinghua University online courses"
+    },
+    {
+      "name": "MIT OpenCourseWare",
+      "desc": "麻省理工学院全部课程资料免费开放",
+      "url": "https://ocw.mit.edu",
+      "tags": [
+        "课程",
+        "MIT",
+        "免费"
+      ],
+      "type": "平台",
+      "en": "MIT OpenCourseWare",
+      "en_desc": "All MIT course materials free"
+    },
+    {
+      "name": "Crash Course",
+      "desc": "Youtube 上的高质量速成课程系列",
+      "url": "https://thecrashcourse.com",
+      "tags": [
+        "视频",
+        "科普",
+        "速成"
+      ],
+      "type": "频道",
+      "en": "Crash Course",
+      "en_desc": "High-quality fast-paced courses on YouTube"
+    },
+    {
+      "name": "3Blue1Brown",
+      "desc": "精美动画讲解数学/编程本质",
+      "url": "https://3blue1brown.com",
+      "tags": [
+        "数学",
+        "动画",
+        "编程"
+      ],
+      "type": "频道",
+      "en": "3Blue1Brown",
+      "en_desc": "Beautiful animated math & programming"
+    },
+    {
+      "name": "freeCodeCamp",
+      "desc": "全栈编程免费课程 + 交互式练习",
+      "url": "https://freecodecamp.org",
+      "tags": [
+        "编程",
+        "全栈",
+        "免费"
+      ],
+      "type": "平台",
+      "en": "freeCodeCamp",
+      "en_desc": "Free full-stack coding + interactive practice"
+    },
+    {
+      "name": "Codecademy",
+      "desc": "交互式编程学习平台，基础课程免费",
+      "url": "https://codecademy.com",
+      "tags": [
+        "编程",
+        "交互",
+        "入门"
+      ],
+      "type": "平台",
+      "en": "Codecademy",
+      "en_desc": "Interactive coding, basic courses free"
+    },
+    {
+      "name": "O'Reilly 免费学习",
+      "desc": "O'Reilly 出版社的部分免费技术书和课程",
+      "url": "https://oreilly.com/free",
+      "tags": [
+        "编程",
+        "技术",
+        "免费"
+      ],
+      "type": "平台",
+      "en": "O'Reilly Free Learning",
+      "en_desc": "Free tech books & courses"
+    },
+    {
+      "name": "Bilibili",
+      "desc": "大量免费高质量教程，搜任一技能都有海量资源",
+      "url": "https://bilibili.com",
+      "tags": [
+        "综合",
+        "视频",
+        "中文"
+      ],
+      "type": "平台",
+      "en": "Bilibili",
+      "en_desc": "Massive free Chinese tutorials"
+    },
+    {
+      "name": "YouTube 学习频道",
+      "desc": "全球最大的视频学习平台，搜一切学习内容",
+      "url": "https://youtube.com",
+      "tags": [
+        "综合",
+        "视频",
+        "全语言"
+      ],
+      "type": "平台",
+      "en": "YouTube Learning",
+      "en_desc": "World's largest video learning platform"
+    },
+    {
+      "name": "Scrimba",
+      "desc": "交互式前端编程课程，可暂停编辑代码",
+      "url": "https://scrimba.com",
+      "tags": [
+        "编程",
+        "前端",
+        "交互"
+      ],
+      "type": "平台",
+      "en": "Scrimba",
+      "en_desc": "Interactive front-end courses, code in video"
+    },
+    {
+      "name": "Duolingo",
+      "desc": "游戏化语言学习应用，完全免费",
+      "url": "https://duolingo.com",
+      "tags": [
+        "语言",
+        "游戏化",
+        "免费"
+      ],
+      "type": "应用",
+      "en": "Duolingo",
+      "en_desc": "Gamified language learning, completely free"
+    },
+    {
+      "name": "ArXiv",
+      "desc": "全球最大学术论文预印本平台，免费获取最新论文",
+      "url": "https://arxiv.org",
+      "tags": [
+        "论文",
+        "学术",
+        "免费"
+      ],
+      "type": "平台",
+      "en": "ArXiv",
+      "en_desc": "Largest free academic paper repository"
+    },
+    {
+      "name": "Sci-Hub",
+      "desc": "绕过付费墙获取学术论文的网站",
+      "url": "https://sci-hub.se",
+      "tags": [
+        "论文",
+        "学术",
+        "免费"
+      ],
+      "type": "站点",
+      "en": "Sci-Hub",
+      "en_desc": "Free access to paywalled academic papers"
+    },
+    {
+      "name": "ResearchGate",
+      "desc": "研究人员社交平台，可免费向作者索取论文",
+      "url": "https://researchgate.net",
+      "tags": [
+        "论文",
+        "社交",
+        "学术"
+      ],
+      "type": "平台",
+      "en": "ResearchGate",
+      "en_desc": "Request papers directly from researchers"
+    },
+    {
+      "name": "TED Talks",
+      "desc": "各领域专家的短演讲，中文字幕齐备",
+      "url": "https://ted.com",
+      "tags": [
+        "演讲",
+        "科普",
+        "TED"
+      ],
+      "type": "平台",
+      "en": "TED Talks",
+      "en_desc": "Expert talks on every topic, Chinese subs"
+    },
+    {
+      "name": "BBC Learning English",
+      "desc": "BBC出品的免费英语学习资源",
+      "url": "https://bbc.co.uk/learningenglish",
+      "tags": [
+        "英语",
+        "学习",
+        "免费"
+      ],
+      "type": "平台",
+      "en": "BBC Learning English",
+      "en_desc": "BBC's free English learning"
+    },
+    {
+      "name": "Stack Overflow",
+      "desc": "程序员问答社区，几乎任何编程问题都能搜到答案",
+      "url": "https://stackoverflow.com",
+      "tags": [
+        "编程",
+        "问答",
+        "社区"
+      ],
+      "type": "社区",
+      "en": "Stack Overflow",
+      "en_desc": "Answers for almost any coding question"
+    },
+    {
+      "name": "DevDocs",
+      "desc": "开发者文档聚合，离线可查",
+      "url": "https://devdocs.io",
+      "tags": [
+        "编程",
+        "文档",
+        "离线"
+      ],
+      "type": "工具",
+      "en": "DevDocs",
+      "en_desc": "Developer docs, works offline"
+    },
+    {
+      "name": "GitHub Education",
+      "desc": "学生包：免费域名/免费服务器/免费开发工具",
+      "url": "https://education.github.com",
+      "tags": [
+        "编程",
+        "学生",
+        "免费工具"
+      ],
+      "type": "平台",
+      "en": "GitHub Education",
+      "en_desc": "Free domains, servers & dev tools for students"
+    },
+    {
+      "name": "Lingoda",
+      "desc": "在线语言学校，免费试听课",
+      "url": "https://lingoda.com",
+      "tags": [
+        "语言",
+        "课程",
+        "直播"
+      ],
+      "type": "平台",
+      "en": "Lingoda",
+      "en_desc": "Online language school, free trial"
+    },
+    {
+      "name": "W3Schools",
+      "desc": "前端开发在线教程（HTML/CSS/JS），免费好用",
+      "url": "https://w3schools.com",
+      "tags": [
+        "编程",
+        "前端",
+        "教程"
+      ],
+      "type": "平台",
+      "en": "W3Schools",
+      "en_desc": "Free front-end dev tutorials"
+    }
   ],
   "设计素材": [
-    {"name": "Unsplash", "desc": "高清免费可商用摄影图片，无需署名", "url": "https://unsplash.com", "tags": ["图片", "摄影", "免费商用"], "type": "站点"},
-    {"name": "Pexels", "desc": "免费可商用图片和视频素材库", "url": "https://pexels.com", "tags": ["图片", "视频", "免费商用"], "type": "站点"},
-    {"name": "Pixabay", "desc": "200万+免费图片/视频/矢量图/插画", "url": "https://pixabay.com", "tags": ["图片", "视频", "矢量", "免费商用"], "type": "站点"},
-    {"name": "Freepik", "desc": "海量免费可商用矢量图/PSD/插画（需署名）", "url": "https://freepik.com", "tags": ["矢量", "PSD", "插画", "免费"], "type": "站点"},
-    {"name": "Flaticon", "desc": "最大免费图标库，1000万+图标可自定义", "url": "https://flaticon.com", "tags": ["图标", "SVG", "免费"], "type": "站点"},
-    {"name": "SVGRepo", "desc": "免费SVG图标，无需署名可商用", "url": "https://svgrepo.com", "tags": ["图标", "SVG", "免费商用"], "type": "站点"},
-    {"name": "IconFont (阿里巴巴)", "desc": "中文图标字体库，图标丰富可定制颜色", "url": "https://iconfont.cn", "tags": ["图标", "中文", "字体"], "type": "站点"},
-    {"name": "Font Awesome", "desc": "最流行的Web图标库，免费版可商用", "url": "https://fontawesome.com", "tags": ["图标", "Web", "免费"], "type": "站点"},
-    {"name": "Google Fonts", "desc": "Google 开源字体库，免费可商用", "url": "https://fonts.google.com", "tags": ["字体", "开源", "免费商用"], "type": "站点"},
-    {"name": "DaFont", "desc": "海量免费字体下载，分类详尽", "url": "https://dafont.com", "tags": ["字体", "免费", "分类"], "type": "站点"},
-    {"name": "ColorHunt", "desc": "精选调色板灵感库，一键复制色值", "url": "https://colorhunt.co", "tags": ["配色", "灵感", "免费"], "type": "站点"},
-    {"name": "Coolors", "desc": "在线配色方案生成器，快速搭色", "url": "https://coolors.co", "tags": ["配色", "工具", "生成"], "type": "工具"},
-    {"name": "Remove.bg", "desc": "在线AI一键抠图，免费版即可用", "url": "https://remove.bg", "tags": ["抠图", "AI", "免费"], "type": "工具"},
-    {"name": "Canva", "desc": "在线设计平台，大量免费模板用于社交媒体/海报", "url": "https://canva.com", "tags": ["设计", "模板", "在线"], "type": "平台"},
-    {"name": "Photopea", "desc": "在线版 Photoshop，完全免费无需安装", "url": "https://photopea.com", "tags": ["修图", "在线", "免费"], "type": "工具"},
-    {"name": "GIMP", "desc": "免费开源 Photoshop 替代品，功能强大", "url": "https://gimp.org", "tags": ["修图", "开源", "免费"], "type": "软件"},
-    {"name": "Inkscape", "desc": "免费开源 Illustrator 替代品（矢量图编辑）", "url": "https://inkscape.org", "tags": ["矢量", "开源", "免费"], "type": "软件"},
-    {"name": "Figma", "desc": "在线UI/UX设计工具，免费版足以个人使用", "url": "https://figma.com", "tags": ["UI", "UX", "在线"], "type": "工具"},
-    {"name": "Blender", "desc": "免费开源3D建模/动画/渲染软件，功能比肩商用", "url": "https://blender.org", "tags": ["3D", "建模", "开源"], "type": "软件"},
-    {"name": "TinyPNG", "desc": "在线PNG/JPEG压缩，显著减小图片体积", "url": "https://tinypng.com", "tags": ["压缩", "图片", "在线"], "type": "工具"},
-    {"name": "Squoosh", "desc": "Google出品的在线图片压缩/格式转换工具", "url": "https://squoosh.app", "tags": ["压缩", "格式转换", "Google"], "type": "工具"},
-    {"name": "Excalidraw", "desc": "手绘风格白板工具，画架构图/流程图神器", "url": "https://excalidraw.com", "tags": ["白板", "手绘", "流程图"], "type": "工具"},
-    {"name": "Draw.io", "desc": "免费在线流程图/思维导图工具", "url": "https://draw.io", "tags": ["流程图", "思维导图", "免费"], "type": "工具"},
-    {"name": "PatternPad", "desc": "在线生成无缝重复图案，免费下载SVG/PNG", "url": "https://patternpad.com", "tags": ["图案", "SVG", "生成"], "type": "工具"},
-    {"name": "Mockup World", "desc": "免费样机素材（Mockup）PSD文件下载", "url": "https://mockupworld.co", "tags": ["样机", "PSD", "免费"], "type": "站点"}
+    {
+      "name": "Unsplash",
+      "desc": "高清免费可商用摄影图片，无需署名",
+      "url": "https://unsplash.com",
+      "tags": [
+        "图片",
+        "摄影",
+        "免费商用"
+      ],
+      "type": "站点",
+      "en": "Unsplash",
+      "en_desc": "Free high-quality stock photos"
+    },
+    {
+      "name": "Pexels",
+      "desc": "免费可商用图片和视频素材库",
+      "url": "https://pexels.com",
+      "tags": [
+        "图片",
+        "视频",
+        "免费商用"
+      ],
+      "type": "站点",
+      "en": "Pexels",
+      "en_desc": "Free stock photos & videos"
+    },
+    {
+      "name": "Pixabay",
+      "desc": "200万+免费图片/视频/矢量图/插画",
+      "url": "https://pixabay.com",
+      "tags": [
+        "图片",
+        "视频",
+        "矢量",
+        "免费商用"
+      ],
+      "type": "站点",
+      "en": "Pixabay",
+      "en_desc": "2M+ free images, vectors & videos"
+    },
+    {
+      "name": "Freepik",
+      "desc": "海量免费可商用矢量图/PSD/插画（需署名）",
+      "url": "https://freepik.com",
+      "tags": [
+        "矢量",
+        "PSD",
+        "插画",
+        "免费"
+      ],
+      "type": "站点",
+      "en": "Freepik",
+      "en_desc": "Free vectors, PSDs & illustrations"
+    },
+    {
+      "name": "Flaticon",
+      "desc": "最大免费图标库，1000万+图标可自定义",
+      "url": "https://flaticon.com",
+      "tags": [
+        "图标",
+        "SVG",
+        "免费"
+      ],
+      "type": "站点",
+      "en": "Flaticon",
+      "en_desc": "10M+ free customizable icons"
+    },
+    {
+      "name": "SVGRepo",
+      "desc": "免费SVG图标，无需署名可商用",
+      "url": "https://svgrepo.com",
+      "tags": [
+        "图标",
+        "SVG",
+        "免费商用"
+      ],
+      "type": "站点",
+      "en": "SVGRepo",
+      "en_desc": "Free SVG icons, commercial use OK"
+    },
+    {
+      "name": "IconFont (阿里巴巴)",
+      "desc": "中文图标字体库，图标丰富可定制颜色",
+      "url": "https://iconfont.cn",
+      "tags": [
+        "图标",
+        "中文",
+        "字体"
+      ],
+      "type": "站点",
+      "en": "IconFont (Alibaba)",
+      "en_desc": "Chinese icon font library"
+    },
+    {
+      "name": "Font Awesome",
+      "desc": "最流行的Web图标库，免费版可商用",
+      "url": "https://fontawesome.com",
+      "tags": [
+        "图标",
+        "Web",
+        "免费"
+      ],
+      "type": "站点",
+      "en": "Font Awesome",
+      "en_desc": "Most popular web icon library"
+    },
+    {
+      "name": "Google Fonts",
+      "desc": "Google 开源字体库，免费可商用",
+      "url": "https://fonts.google.com",
+      "tags": [
+        "字体",
+        "开源",
+        "免费商用"
+      ],
+      "type": "站点",
+      "en": "Google Fonts",
+      "en_desc": "Free open-source fonts, commercial OK"
+    },
+    {
+      "name": "DaFont",
+      "desc": "海量免费字体下载，分类详尽",
+      "url": "https://dafont.com",
+      "tags": [
+        "字体",
+        "免费",
+        "分类"
+      ],
+      "type": "站点",
+      "en": "DaFont",
+      "en_desc": "Massive free font downloads"
+    },
+    {
+      "name": "ColorHunt",
+      "desc": "精选调色板灵感库，一键复制色值",
+      "url": "https://colorhunt.co",
+      "tags": [
+        "配色",
+        "灵感",
+        "免费"
+      ],
+      "type": "站点",
+      "en": "ColorHunt",
+      "en_desc": "Curated color palette inspiration"
+    },
+    {
+      "name": "Coolors",
+      "desc": "在线配色方案生成器，快速搭色",
+      "url": "https://coolors.co",
+      "tags": [
+        "配色",
+        "工具",
+        "生成"
+      ],
+      "type": "工具",
+      "en": "Coolors",
+      "en_desc": "Online color scheme generator"
+    },
+    {
+      "name": "Remove.bg",
+      "desc": "在线AI一键抠图，免费版即可用",
+      "url": "https://remove.bg",
+      "tags": [
+        "抠图",
+        "AI",
+        "免费"
+      ],
+      "type": "工具",
+      "en": "Remove.bg",
+      "en_desc": "AI background removal, free tier"
+    },
+    {
+      "name": "Canva",
+      "desc": "在线设计平台，大量免费模板用于社交媒体/海报",
+      "url": "https://canva.com",
+      "tags": [
+        "设计",
+        "模板",
+        "在线"
+      ],
+      "type": "平台",
+      "en": "Canva",
+      "en_desc": "Online design with free templates"
+    },
+    {
+      "name": "Photopea",
+      "desc": "在线版 Photoshop，完全免费无需安装",
+      "url": "https://photopea.com",
+      "tags": [
+        "修图",
+        "在线",
+        "免费"
+      ],
+      "type": "工具",
+      "en": "Photopea",
+      "en_desc": "Free Photoshop online, no install"
+    },
+    {
+      "name": "GIMP",
+      "desc": "免费开源 Photoshop 替代品，功能强大",
+      "url": "https://gimp.org",
+      "tags": [
+        "修图",
+        "开源",
+        "免费"
+      ],
+      "type": "软件",
+      "en": "GIMP",
+      "en_desc": "Free open-source Photoshop alternative"
+    },
+    {
+      "name": "Inkscape",
+      "desc": "免费开源 Illustrator 替代品（矢量图编辑）",
+      "url": "https://inkscape.org",
+      "tags": [
+        "矢量",
+        "开源",
+        "免费"
+      ],
+      "type": "软件",
+      "en": "Inkscape",
+      "en_desc": "Free open-source Illustrator (vector)"
+    },
+    {
+      "name": "Figma",
+      "desc": "在线UI/UX设计工具，免费版足以个人使用",
+      "url": "https://figma.com",
+      "tags": [
+        "UI",
+        "UX",
+        "在线"
+      ],
+      "type": "工具",
+      "en": "Figma",
+      "en_desc": "Online UI/UX design, free for personal"
+    },
+    {
+      "name": "Blender",
+      "desc": "免费开源3D建模/动画/渲染软件，功能比肩商用",
+      "url": "https://blender.org",
+      "tags": [
+        "3D",
+        "建模",
+        "开源"
+      ],
+      "type": "软件",
+      "en": "Blender",
+      "en_desc": "Free 3D modeling & animation"
+    },
+    {
+      "name": "TinyPNG",
+      "desc": "在线PNG/JPEG压缩，显著减小图片体积",
+      "url": "https://tinypng.com",
+      "tags": [
+        "压缩",
+        "图片",
+        "在线"
+      ],
+      "type": "工具",
+      "en": "TinyPNG",
+      "en_desc": "Online image compression tool"
+    },
+    {
+      "name": "Squoosh",
+      "desc": "Google出品的在线图片压缩/格式转换工具",
+      "url": "https://squoosh.app",
+      "tags": [
+        "压缩",
+        "格式转换",
+        "Google"
+      ],
+      "type": "工具",
+      "en": "Squoosh",
+      "en_desc": "Google's image optimizer"
+    },
+    {
+      "name": "Excalidraw",
+      "desc": "手绘风格白板工具，画架构图/流程图神器",
+      "url": "https://excalidraw.com",
+      "tags": [
+        "白板",
+        "手绘",
+        "流程图"
+      ],
+      "type": "工具",
+      "en": "Excalidraw",
+      "en_desc": "Hand-drawn style diagrams for free"
+    },
+    {
+      "name": "Draw.io",
+      "desc": "免费在线流程图/思维导图工具",
+      "url": "https://draw.io",
+      "tags": [
+        "流程图",
+        "思维导图",
+        "免费"
+      ],
+      "type": "工具",
+      "en": "Draw.io",
+      "en_desc": "Free flowcharts & mind maps"
+    },
+    {
+      "name": "PatternPad",
+      "desc": "在线生成无缝重复图案，免费下载SVG/PNG",
+      "url": "https://patternpad.com",
+      "tags": [
+        "图案",
+        "SVG",
+        "生成"
+      ],
+      "type": "工具",
+      "en": "PatternPad",
+      "en_desc": "Generate seamless patterns, free SVG"
+    },
+    {
+      "name": "Mockup World",
+      "desc": "免费样机素材（Mockup）PSD文件下载",
+      "url": "https://mockupworld.co",
+      "tags": [
+        "样机",
+        "PSD",
+        "免费"
+      ],
+      "type": "站点",
+      "en": "Mockup World",
+      "en_desc": "Free mockup PSD downloads"
+    }
   ],
   "软件工具": [
-    {"name": "7-Zip", "desc": "免费开源压缩软件，支持几乎所有格式", "url": "https://7-zip.org", "tags": ["压缩", "开源", "免费"], "type": "软件"},
-    {"name": "Notepad++", "desc": "轻量级代码/文本编辑器，支持语法高亮", "url": "https://notepad-plus-plus.org", "tags": ["编辑器", "代码", "轻量"], "type": "软件"},
-    {"name": "VSCode", "desc": "微软免费代码编辑器，插件生态最丰富", "url": "https://code.visualstudio.com", "tags": ["编辑器", "代码", "微软"], "type": "软件"},
-    {"name": "OBS Studio", "desc": "免费开源录屏/直播软件，功能专业级", "url": "https://obsproject.com", "tags": ["录屏", "直播", "开源"], "type": "软件"},
-    {"name": "VLC Media Player", "desc": "万能视频播放器，几乎播所有格式", "url": "https://videolan.org/vlc", "tags": ["播放器", "视频", "免费"], "type": "软件"},
-    {"name": "HandBrake", "desc": "免费视频转码压缩工具", "url": "https://handbrake.fr", "tags": ["视频", "转码", "免费"], "type": "软件"},
-    {"name": "Audacity", "desc": "免费开源音频编辑/录音软件", "url": "https://audacityteam.org", "tags": ["音频", "编辑", "开源"], "type": "软件"},
-    {"name": "Everything", "desc": "Windows 极速文件搜索工具，秒搜全盘", "url": "https://voidtools.com", "tags": ["搜索", "文件", "Windows"], "type": "软件"},
-    {"name": "ShareX", "desc": "免费开源截图/录屏/分享工具", "url": "https://getsharex.com", "tags": ["截图", "录屏", "开源"], "type": "软件"},
-    {"name": "Rufus", "desc": "制作 USB 启动盘工具，轻量好用", "url": "https://rufus.ie", "tags": ["USB", "启动盘", "工具"], "type": "软件"},
-    {"name": "Bitwarden", "desc": "免费开源密码管理器，跨平台同步", "url": "https://bitwarden.com", "tags": ["密码", "安全", "开源"], "type": "软件"},
-    {"name": "Obsidian", "desc": "本地 Markdown 知识库/笔记软件，双向链接", "url": "https://obsidian.md", "tags": ["笔记", "知识库", "Markdown"], "type": "软件"},
-    {"name": "AutoHotkey", "desc": "Windows 自动化脚本工具，自定义快捷键/宏", "url": "https://autohotkey.com", "tags": ["自动化", "脚本", "Windows"], "type": "软件"},
-    {"name": "Ditto Clipboard", "desc": "剪贴板历史记录管理器，找回复制过的内容", "url": "https://ditto-cp.sourceforge.io", "tags": ["剪贴板", "历史", "免费"], "type": "软件"},
-    {"name": "Wireshark", "desc": "网络抓包分析工具，网络安全必备", "url": "https://wireshark.org", "tags": ["网络", "抓包", "安全"], "type": "软件"},
-    {"name": "VirtualBox", "desc": "免费开源虚拟机软件，跑多个操作系统", "url": "https://virtualbox.org", "tags": ["虚拟机", "开源", "免费"], "type": "软件"},
-    {"name": "KeePass", "desc": "本地密码管理器，加密存储，完全离线", "url": "https://keepass.info", "tags": ["密码", "安全", "离线"], "type": "软件"},
-    {"name": "SumatraPDF", "desc": "轻量级 PDF/EPUB/MOBI 阅读器，启动极快", "url": "https://sumatrapdfreader.org", "tags": ["PDF", "阅读器", "轻量"], "type": "软件"},
-    {"name": "Calibre", "desc": "电子书管理/格式转换/推送阅读器一体", "url": "https://calibre-ebook.com", "tags": ["电子书", "管理", "转换"], "type": "软件"},
-    {"name": "PowerToys", "desc": "微软官方Windows效率工具包，颜色选择器/批量重命名等", "url": "https://learn.microsoft.com/windows/powertoys", "tags": ["Windows", "工具集", "微软"], "type": "软件"},
-    {"name": "uTools", "desc": "国产效率启动器，插件丰富", "url": "https://u.tools", "tags": ["启动器", "插件", "国产"], "type": "软件"},
-    {"name": "Balena Etcher", "desc": "制作系统U盘启动盘，界面美观", "url": "https://balena.io/etcher", "tags": ["USB", "启动盘", "系统"], "type": "软件"},
-    {"name": "DiskGenius", "desc": "磁盘分区/数据恢复工具，免费版够用", "url": "https://diskgenius.com", "tags": ["磁盘", "分区", "恢复"], "type": "软件"},
-    {"name": "CPU-Z", "desc": "硬件检测工具，查看CPU/内存/主板信息", "url": "https://cpuid.com/softwares/cpu-z.html", "tags": ["硬件", "检测", "免费"], "type": "软件"},
-    {"name": "HWMonitor", "desc": "硬件温度/电压/风扇监控", "url": "https://cpuid.com/softwares/hwmonitor.html", "tags": ["硬件", "温度", "监控"], "type": "软件"}
+    {
+      "name": "7-Zip",
+      "desc": "免费开源压缩软件，支持几乎所有格式",
+      "url": "https://7-zip.org",
+      "tags": [
+        "压缩",
+        "开源",
+        "免费"
+      ],
+      "type": "软件",
+      "en": "7-Zip",
+      "en_desc": "Free archiver, supports all formats"
+    },
+    {
+      "name": "Notepad++",
+      "desc": "轻量级代码/文本编辑器，支持语法高亮",
+      "url": "https://notepad-plus-plus.org",
+      "tags": [
+        "编辑器",
+        "代码",
+        "轻量"
+      ],
+      "type": "软件",
+      "en": "Notepad++",
+      "en_desc": "Lightweight code editor"
+    },
+    {
+      "name": "VSCode",
+      "desc": "微软免费代码编辑器，插件生态最丰富",
+      "url": "https://code.visualstudio.com",
+      "tags": [
+        "编辑器",
+        "代码",
+        "微软"
+      ],
+      "type": "软件",
+      "en": "VS Code",
+      "en_desc": "Free code editor, richest plugins"
+    },
+    {
+      "name": "OBS Studio",
+      "desc": "免费开源录屏/直播软件，功能专业级",
+      "url": "https://obsproject.com",
+      "tags": [
+        "录屏",
+        "直播",
+        "开源"
+      ],
+      "type": "软件",
+      "en": "OBS Studio",
+      "en_desc": "Free pro-grade recording & streaming"
+    },
+    {
+      "name": "VLC Media Player",
+      "desc": "万能视频播放器，几乎播所有格式",
+      "url": "https://videolan.org/vlc",
+      "tags": [
+        "播放器",
+        "视频",
+        "免费"
+      ],
+      "type": "软件",
+      "en": "VLC Media Player",
+      "en_desc": "Plays almost any video format"
+    },
+    {
+      "name": "HandBrake",
+      "desc": "免费视频转码压缩工具",
+      "url": "https://handbrake.fr",
+      "tags": [
+        "视频",
+        "转码",
+        "免费"
+      ],
+      "type": "软件",
+      "en": "HandBrake",
+      "en_desc": "Free video transcoding tool"
+    },
+    {
+      "name": "Audacity",
+      "desc": "免费开源音频编辑/录音软件",
+      "url": "https://audacityteam.org",
+      "tags": [
+        "音频",
+        "编辑",
+        "开源"
+      ],
+      "type": "软件",
+      "en": "Audacity",
+      "en_desc": "Free audio editing & recording"
+    },
+    {
+      "name": "Everything",
+      "desc": "Windows 极速文件搜索工具，秒搜全盘",
+      "url": "https://voidtools.com",
+      "tags": [
+        "搜索",
+        "文件",
+        "Windows"
+      ],
+      "type": "软件",
+      "en": "Everything",
+      "en_desc": "Windows instant file search"
+    },
+    {
+      "name": "ShareX",
+      "desc": "免费开源截图/录屏/分享工具",
+      "url": "https://getsharex.com",
+      "tags": [
+        "截图",
+        "录屏",
+        "开源"
+      ],
+      "type": "软件",
+      "en": "ShareX",
+      "en_desc": "Free screenshot & screen recording"
+    },
+    {
+      "name": "Rufus",
+      "desc": "制作 USB 启动盘工具，轻量好用",
+      "url": "https://rufus.ie",
+      "tags": [
+        "USB",
+        "启动盘",
+        "工具"
+      ],
+      "type": "软件",
+      "en": "Rufus",
+      "en_desc": "USB boot drive creator"
+    },
+    {
+      "name": "Bitwarden",
+      "desc": "免费开源密码管理器，跨平台同步",
+      "url": "https://bitwarden.com",
+      "tags": [
+        "密码",
+        "安全",
+        "开源"
+      ],
+      "type": "软件",
+      "en": "Bitwarden",
+      "en_desc": "Free open-source password manager"
+    },
+    {
+      "name": "Obsidian",
+      "desc": "本地 Markdown 知识库/笔记软件，双向链接",
+      "url": "https://obsidian.md",
+      "tags": [
+        "笔记",
+        "知识库",
+        "Markdown"
+      ],
+      "type": "软件",
+      "en": "Obsidian",
+      "en_desc": "Local Markdown knowledge base"
+    },
+    {
+      "name": "AutoHotkey",
+      "desc": "Windows 自动化脚本工具，自定义快捷键/宏",
+      "url": "https://autohotkey.com",
+      "tags": [
+        "自动化",
+        "脚本",
+        "Windows"
+      ],
+      "type": "软件",
+      "en": "AutoHotkey",
+      "en_desc": "Windows automation scripting"
+    },
+    {
+      "name": "Ditto Clipboard",
+      "desc": "剪贴板历史记录管理器，找回复制过的内容",
+      "url": "https://ditto-cp.sourceforge.io",
+      "tags": [
+        "剪贴板",
+        "历史",
+        "免费"
+      ],
+      "type": "软件",
+      "en": "Ditto Clipboard",
+      "en_desc": "Clipboard history manager"
+    },
+    {
+      "name": "Wireshark",
+      "desc": "网络抓包分析工具，网络安全必备",
+      "url": "https://wireshark.org",
+      "tags": [
+        "网络",
+        "抓包",
+        "安全"
+      ],
+      "type": "软件",
+      "en": "Wireshark",
+      "en_desc": "Network packet analyzer"
+    },
+    {
+      "name": "VirtualBox",
+      "desc": "免费开源虚拟机软件，跑多个操作系统",
+      "url": "https://virtualbox.org",
+      "tags": [
+        "虚拟机",
+        "开源",
+        "免费"
+      ],
+      "type": "软件",
+      "en": "VirtualBox",
+      "en_desc": "Free VM software, run multiple OS"
+    },
+    {
+      "name": "KeePass",
+      "desc": "本地密码管理器，加密存储，完全离线",
+      "url": "https://keepass.info",
+      "tags": [
+        "密码",
+        "安全",
+        "离线"
+      ],
+      "type": "软件",
+      "en": "KeePass",
+      "en_desc": "Offline encrypted password storage"
+    },
+    {
+      "name": "SumatraPDF",
+      "desc": "轻量级 PDF/EPUB/MOBI 阅读器，启动极快",
+      "url": "https://sumatrapdfreader.org",
+      "tags": [
+        "PDF",
+        "阅读器",
+        "轻量"
+      ],
+      "type": "软件",
+      "en": "SumatraPDF",
+      "en_desc": "Ultra-light PDF reader"
+    },
+    {
+      "name": "Calibre",
+      "desc": "电子书管理/格式转换/推送阅读器一体",
+      "url": "https://calibre-ebook.com",
+      "tags": [
+        "电子书",
+        "管理",
+        "转换"
+      ],
+      "type": "软件",
+      "en": "Calibre",
+      "en_desc": "Ebook management & conversion"
+    },
+    {
+      "name": "PowerToys",
+      "desc": "微软官方Windows效率工具包，颜色选择器/批量重命名等",
+      "url": "https://learn.microsoft.com/windows/powertoys",
+      "tags": [
+        "Windows",
+        "工具集",
+        "微软"
+      ],
+      "type": "软件",
+      "en": "Microsoft PowerToys",
+      "en_desc": "Windows power utilities pack"
+    },
+    {
+      "name": "uTools",
+      "desc": "国产效率启动器，插件丰富",
+      "url": "https://u.tools",
+      "tags": [
+        "启动器",
+        "插件",
+        "国产"
+      ],
+      "type": "软件",
+      "en": "uTools",
+      "en_desc": "Chinese productivity launcher"
+    },
+    {
+      "name": "Balena Etcher",
+      "desc": "制作系统U盘启动盘，界面美观",
+      "url": "https://balena.io/etcher",
+      "tags": [
+        "USB",
+        "启动盘",
+        "系统"
+      ],
+      "type": "软件",
+      "en": "Balena Etcher",
+      "en_desc": "Beautiful USB boot maker"
+    },
+    {
+      "name": "DiskGenius",
+      "desc": "磁盘分区/数据恢复工具，免费版够用",
+      "url": "https://diskgenius.com",
+      "tags": [
+        "磁盘",
+        "分区",
+        "恢复"
+      ],
+      "type": "软件",
+      "en": "DiskGenius",
+      "en_desc": "Disk partition & data recovery"
+    },
+    {
+      "name": "CPU-Z",
+      "desc": "硬件检测工具，查看CPU/内存/主板信息",
+      "url": "https://cpuid.com/softwares/cpu-z.html",
+      "tags": [
+        "硬件",
+        "检测",
+        "免费"
+      ],
+      "type": "软件",
+      "en": "CPU-Z",
+      "en_desc": "Hardware detection tool"
+    },
+    {
+      "name": "HWMonitor",
+      "desc": "硬件温度/电压/风扇监控",
+      "url": "https://cpuid.com/softwares/hwmonitor.html",
+      "tags": [
+        "硬件",
+        "温度",
+        "监控"
+      ],
+      "type": "软件",
+      "en": "HWMonitor",
+      "en_desc": "Temperature & voltage monitor"
+    }
   ],
   "AI工具": [
-    {"name": "ChatGPT", "desc": "OpenAI 对话AI，最主流的AI助手，免费版可用", "url": "https://chatgpt.com", "tags": ["对话", "OpenAI", "综合"], "type": "工具"},
-    {"name": "Claude", "desc": "Anthropic 高质量对话AI，长文本/推理特别强", "url": "https://claude.ai", "tags": ["对话", "Anthropic", "长文本"], "type": "工具"},
-    {"name": "Gemini", "desc": "Google 多模态AI，支持图片/视频/代码分析", "url": "https://gemini.google.com", "tags": ["对话", "Google", "多模态"], "type": "工具"},
-    {"name": "DeepSeek", "desc": "中国开源的强推理AI模型，数学/编程能力出色", "url": "https://deepseek.com", "tags": ["对话", "开源", "推理"], "type": "工具"},
-    {"name": "Perplexity AI", "desc": "AI搜索引擎，带来源引用，适合研究查资料", "url": "https://perplexity.ai", "tags": ["搜索", "研究", "引用"], "type": "工具"},
-    {"name": "Kimi (月之暗面)", "desc": "国产AI助手，超长上下文处理能力突出", "url": "https://kimi.moonshot.cn", "tags": ["对话", "国产", "长文本"], "type": "工具"},
-    {"name": "豆包 (字节跳动)", "desc": "字节跳动AI助手，免费使用功能丰富", "url": "https://doubao.com", "tags": ["对话", "国产", "免费"], "type": "工具"},
-    {"name": "通义千问 (阿里)", "desc": "阿里AI助手，支持文档/图片/视频理解", "url": "https://tongyi.aliyun.com", "tags": ["对话", "国产", "多模态"], "type": "工具"},
-    {"name": "文心一言 (百度)", "desc": "百度AI对话助手，中文理解能力强", "url": "https://yiyan.baidu.com", "tags": ["对话", "国产", "百度"], "type": "工具"},
-    {"name": "Notion AI", "desc": "Notion 内置AI，写文档/总结/brainstorm", "url": "https://notion.so", "tags": ["写作", "笔记", "AI集成"], "type": "工具"},
-    {"name": "Gamma", "desc": "AI生成PPT/文档/网页，5分钟出精美演示文稿", "url": "https://gamma.app", "tags": ["PPT", "演示", "生成"], "type": "工具"},
-    {"name": "Midjourney", "desc": "AI图片生成，艺术风格最出众，需在Discord使用", "url": "https://midjourney.com", "tags": ["图片", "生成", "艺术"], "type": "工具"},
-    {"name": "Stable Diffusion", "desc": "开源AI绘图，本地部署完全免费", "url": "https://stability.ai", "tags": ["图片", "开源", "本地"], "type": "工具"},
-    {"name": "DALL·E 3", "desc": "OpenAI 的AI绘图引擎，集成在ChatGPT Plus", "url": "https://openai.com/dall-e-3", "tags": ["图片", "OpenAI", "生成"], "type": "工具"},
-    {"name": "Suno AI", "desc": "AI音乐生成，输入歌词生成完整歌曲", "url": "https://suno.com", "tags": ["音乐", "生成", "AI"], "type": "工具"},
-    {"name": "ElevenLabs", "desc": "AI语音合成，音色逼真情感丰富", "url": "https://elevenlabs.io", "tags": ["语音", "合成", "TTS"], "type": "工具"},
-    {"name": "剪映 (CapCut)", "desc": "字节跳动视频剪辑软件，内置AI功能（数字人/字幕）", "url": "https://capcut.com", "tags": ["视频", "剪辑", "AI字幕"], "type": "工具"},
-    {"name": "Runway Gen-3", "desc": "AI视频生成/编辑平台，文本/图片生成视频", "url": "https://runwayml.com", "tags": ["视频", "生成", "编辑"], "type": "工具"},
-    {"name": "Cursor", "desc": "AI原生代码编辑器，GPT-4集成，编程效率翻倍", "url": "https://cursor.sh", "tags": ["编程", "编辑器", "AI"], "type": "工具"},
-    {"name": "GitHub Copilot", "desc": "AI编程助手，VSCode集成，自动补全代码", "url": "https://github.com/features/copilot", "tags": ["编程", "AI", "自动补全"], "type": "工具"},
-    {"name": "Grammarly", "desc": "AI英文写作助手，语法检查/润色/改写", "url": "https://grammarly.com", "tags": ["写作", "英文", "语法"], "type": "工具"},
-    {"name": "HeyGen", "desc": "AI数字人视频生成，上传文本生成真人口播视频", "url": "https://heygen.com", "tags": ["视频", "数字人", "口播"], "type": "工具"},
-    {"name": "Otter.ai", "desc": "AI会议记录/语音转文字，实时转录", "url": "https://otter.ai", "tags": ["会议", "转录", "AI"], "type": "工具"},
-    {"name": "Hugging Face", "desc": "AI模型托管平台，成千上万开源模型免费使用", "url": "https://huggingface.co", "tags": ["模型", "开源", "社区"], "type": "平台"},
-    {"name": "Poe", "desc": "聚合多款AI模型的聊天平台，一个账号用多种AI", "url": "https://poe.com", "tags": ["对话", "聚合", "多模型"], "type": "平台"},
-    {"name": "Coze (扣子)", "desc": "字节跳动AI Bot搭建平台，可建自己的AI助手", "url": "https://coze.com", "tags": ["Bot", "搭建", "国产"], "type": "平台"},
-    {"name": "Ollama", "desc": "本地运行大语言模型，一条命令跑LLaMA/Qwen等开源模型", "url": "https://ollama.com", "tags": ["本地", "LLM", "开源"], "type": "工具"},
-    {"name": "ComfyUI", "desc": "节点式AI绘图工作流工具，Stable Diffusion最强前端", "url": "https://comfyui.org", "tags": ["图片", "工作流", "节点"], "type": "工具"},
-    {"name": "Civitai", "desc": "Stable Diffusion模型/插件社区，下载别人训练的模型", "url": "https://civitai.com", "tags": ["模型", "SD", "社区"], "type": "社区"},
-    {"name": "Monica", "desc": "浏览器AI助手插件，集成多个主流模型", "url": "https://monica.im", "tags": ["插件", "浏览器", "多模型"], "type": "工具"},
-    {"name": "Bolt.new", "desc": "AI生成全栈网页应用，描述需求直接出代码", "url": "https://bolt.new", "tags": ["编程", "生成", "全栈"], "type": "工具"},
-    {"name": "v0.dev", "desc": "Vercel 出品的AI生成前端组件/页面", "url": "https://v0.dev", "tags": ["编程", "前端", "生成"], "type": "工具"},
-    {"name": "Tome", "desc": "AI叙事演示工具，输入大纲自动生成讲演", "url": "https://tome.app", "tags": ["演示", "叙事", "AI"], "type": "工具"},
-    {"name": "Perplexity Pro", "desc": "Perplexity 付费版，不限次搜索+上传文件", "url": "https://perplexity.ai", "tags": ["搜索", "专业", "文件"], "type": "工具"},
-    {"name": "Replit", "desc": "在线IDE + AI编程助手，浏览器内写代码", "url": "https://replit.com", "tags": ["编程", "在线", "IDE"], "type": "工具"}
+    {
+      "name": "ChatGPT",
+      "desc": "OpenAI 对话AI，最主流的AI助手，免费版可用",
+      "url": "https://chatgpt.com",
+      "tags": [
+        "对话",
+        "OpenAI",
+        "综合"
+      ],
+      "type": "工具",
+      "en": "ChatGPT",
+      "en_desc": "Most popular AI by OpenAI"
+    },
+    {
+      "name": "Claude",
+      "desc": "Anthropic 高质量对话AI，长文本/推理特别强",
+      "url": "https://claude.ai",
+      "tags": [
+        "对话",
+        "Anthropic",
+        "长文本"
+      ],
+      "type": "工具",
+      "en": "Claude by Anthropic",
+      "en_desc": "Best for long text & reasoning"
+    },
+    {
+      "name": "Gemini",
+      "desc": "Google 多模态AI，支持图片/视频/代码分析",
+      "url": "https://gemini.google.com",
+      "tags": [
+        "对话",
+        "Google",
+        "多模态"
+      ],
+      "type": "工具",
+      "en": "Google Gemini",
+      "en_desc": "Multimodal AI from Google"
+    },
+    {
+      "name": "DeepSeek",
+      "desc": "中国开源的强推理AI模型，数学/编程能力出色",
+      "url": "https://deepseek.com",
+      "tags": [
+        "对话",
+        "开源",
+        "推理"
+      ],
+      "type": "工具",
+      "en": "DeepSeek",
+      "en_desc": "Chinese open-source AI, strong at math"
+    },
+    {
+      "name": "Perplexity AI",
+      "desc": "AI搜索引擎，带来源引用，适合研究查资料",
+      "url": "https://perplexity.ai",
+      "tags": [
+        "搜索",
+        "研究",
+        "引用"
+      ],
+      "type": "工具",
+      "en": "Perplexity AI",
+      "en_desc": "AI search with citations"
+    },
+    {
+      "name": "Kimi (月之暗面)",
+      "desc": "国产AI助手，超长上下文处理能力突出",
+      "url": "https://kimi.moonshot.cn",
+      "tags": [
+        "对话",
+        "国产",
+        "长文本"
+      ],
+      "type": "工具",
+      "en": "Kimi (Moonshot)",
+      "en_desc": "Great at long context processing"
+    },
+    {
+      "name": "豆包 (字节跳动)",
+      "desc": "字节跳动AI助手，免费使用功能丰富",
+      "url": "https://doubao.com",
+      "tags": [
+        "对话",
+        "国产",
+        "免费"
+      ],
+      "type": "工具",
+      "en": "Doubao (ByteDance)",
+      "en_desc": "Free feature-rich AI assistant"
+    },
+    {
+      "name": "通义千问 (阿里)",
+      "desc": "阿里AI助手，支持文档/图片/视频理解",
+      "url": "https://tongyi.aliyun.com",
+      "tags": [
+        "对话",
+        "国产",
+        "多模态"
+      ],
+      "type": "工具",
+      "en": "Tongyi Qianwen (Alibaba)",
+      "en_desc": "AI with document/image understanding"
+    },
+    {
+      "name": "文心一言 (百度)",
+      "desc": "百度AI对话助手，中文理解能力强",
+      "url": "https://yiyan.baidu.com",
+      "tags": [
+        "对话",
+        "国产",
+        "百度"
+      ],
+      "type": "工具",
+      "en": "ERNIE Bot (Baidu)",
+      "en_desc": "Baidu's AI, strong in Chinese"
+    },
+    {
+      "name": "Notion AI",
+      "desc": "Notion 内置AI，写文档/总结/brainstorm",
+      "url": "https://notion.so",
+      "tags": [
+        "写作",
+        "笔记",
+        "AI集成"
+      ],
+      "type": "工具",
+      "en": "Notion AI",
+      "en_desc": "AI writing & brainstorming in Notion"
+    },
+    {
+      "name": "Gamma",
+      "desc": "AI生成PPT/文档/网页，5分钟出精美演示文稿",
+      "url": "https://gamma.app",
+      "tags": [
+        "PPT",
+        "演示",
+        "生成"
+      ],
+      "type": "工具",
+      "en": "Gamma",
+      "en_desc": "AI presentations in 5 minutes"
+    },
+    {
+      "name": "Midjourney",
+      "desc": "AI图片生成，艺术风格最出众，需在Discord使用",
+      "url": "https://midjourney.com",
+      "tags": [
+        "图片",
+        "生成",
+        "艺术"
+      ],
+      "type": "工具",
+      "en": "Midjourney",
+      "en_desc": "Best AI art generation"
+    },
+    {
+      "name": "Stable Diffusion",
+      "desc": "开源AI绘图，本地部署完全免费",
+      "url": "https://stability.ai",
+      "tags": [
+        "图片",
+        "开源",
+        "本地"
+      ],
+      "type": "工具",
+      "en": "Stable Diffusion",
+      "en_desc": "Free open-source AI image gen"
+    },
+    {
+      "name": "DALL·E 3",
+      "desc": "OpenAI 的AI绘图引擎，集成在ChatGPT Plus",
+      "url": "https://openai.com/dall-e-3",
+      "tags": [
+        "图片",
+        "OpenAI",
+        "生成"
+      ],
+      "type": "工具",
+      "en": "DALL-E 3",
+      "en_desc": "OpenAI's image generator"
+    },
+    {
+      "name": "Suno AI",
+      "desc": "AI音乐生成，输入歌词生成完整歌曲",
+      "url": "https://suno.com",
+      "tags": [
+        "音乐",
+        "生成",
+        "AI"
+      ],
+      "type": "工具",
+      "en": "Suno AI",
+      "en_desc": "AI music from lyrics"
+    },
+    {
+      "name": "ElevenLabs",
+      "desc": "AI语音合成，音色逼真情感丰富",
+      "url": "https://elevenlabs.io",
+      "tags": [
+        "语音",
+        "合成",
+        "TTS"
+      ],
+      "type": "工具",
+      "en": "ElevenLabs",
+      "en_desc": "Most realistic AI voice synthesis"
+    },
+    {
+      "name": "剪映 (CapCut)",
+      "desc": "字节跳动视频剪辑软件，内置AI功能（数字人/字幕）",
+      "url": "https://capcut.com",
+      "tags": [
+        "视频",
+        "剪辑",
+        "AI字幕"
+      ],
+      "type": "工具",
+      "en": "CapCut (Jianying)",
+      "en_desc": "ByteDance video editor with AI"
+    },
+    {
+      "name": "Runway Gen-3",
+      "desc": "AI视频生成/编辑平台，文本/图片生成视频",
+      "url": "https://runwayml.com",
+      "tags": [
+        "视频",
+        "生成",
+        "编辑"
+      ],
+      "type": "工具",
+      "en": "Runway Gen-3",
+      "en_desc": "AI video generation platform"
+    },
+    {
+      "name": "Cursor",
+      "desc": "AI原生代码编辑器，GPT-4集成，编程效率翻倍",
+      "url": "https://cursor.sh",
+      "tags": [
+        "编程",
+        "编辑器",
+        "AI"
+      ],
+      "type": "工具",
+      "en": "Cursor",
+      "en_desc": "AI code editor, doubles speed"
+    },
+    {
+      "name": "GitHub Copilot",
+      "desc": "AI编程助手，VSCode集成，自动补全代码",
+      "url": "https://github.com/features/copilot",
+      "tags": [
+        "编程",
+        "AI",
+        "自动补全"
+      ],
+      "type": "工具",
+      "en": "GitHub Copilot",
+      "en_desc": "AI code autocomplete"
+    },
+    {
+      "name": "Grammarly",
+      "desc": "AI英文写作助手，语法检查/润色/改写",
+      "url": "https://grammarly.com",
+      "tags": [
+        "写作",
+        "英文",
+        "语法"
+      ],
+      "type": "工具",
+      "en": "Grammarly",
+      "en_desc": "AI English writing assistant"
+    },
+    {
+      "name": "HeyGen",
+      "desc": "AI数字人视频生成，上传文本生成真人口播视频",
+      "url": "https://heygen.com",
+      "tags": [
+        "视频",
+        "数字人",
+        "口播"
+      ],
+      "type": "工具",
+      "en": "HeyGen",
+      "en_desc": "AI avatar talking video generator"
+    },
+    {
+      "name": "Otter.ai",
+      "desc": "AI会议记录/语音转文字，实时转录",
+      "url": "https://otter.ai",
+      "tags": [
+        "会议",
+        "转录",
+        "AI"
+      ],
+      "type": "工具",
+      "en": "Otter.ai",
+      "en_desc": "AI meeting transcription"
+    },
+    {
+      "name": "Hugging Face",
+      "desc": "AI模型托管平台，成千上万开源模型免费使用",
+      "url": "https://huggingface.co",
+      "tags": [
+        "模型",
+        "开源",
+        "社区"
+      ],
+      "type": "平台",
+      "en": "Hugging Face",
+      "en_desc": "Thousands of free AI models"
+    },
+    {
+      "name": "Poe",
+      "desc": "聚合多款AI模型的聊天平台，一个账号用多种AI",
+      "url": "https://poe.com",
+      "tags": [
+        "对话",
+        "聚合",
+        "多模型"
+      ],
+      "type": "平台",
+      "en": "Poe",
+      "en_desc": "One app for many AI models"
+    },
+    {
+      "name": "Coze (扣子)",
+      "desc": "字节跳动AI Bot搭建平台，可建自己的AI助手",
+      "url": "https://coze.com",
+      "tags": [
+        "Bot",
+        "搭建",
+        "国产"
+      ],
+      "type": "平台",
+      "en": "Coze (ByteDance)",
+      "en_desc": "Build your own AI bot"
+    },
+    {
+      "name": "Ollama",
+      "desc": "本地运行大语言模型，一条命令跑LLaMA/Qwen等开源模型",
+      "url": "https://ollama.com",
+      "tags": [
+        "本地",
+        "LLM",
+        "开源"
+      ],
+      "type": "工具",
+      "en": "Ollama",
+      "en_desc": "Run LLMs locally, one command"
+    },
+    {
+      "name": "ComfyUI",
+      "desc": "节点式AI绘图工作流工具，Stable Diffusion最强前端",
+      "url": "https://comfyui.org",
+      "tags": [
+        "图片",
+        "工作流",
+        "节点"
+      ],
+      "type": "工具",
+      "en": "ComfyUI",
+      "en_desc": "Node-based AI art workflow"
+    },
+    {
+      "name": "Civitai",
+      "desc": "Stable Diffusion模型/插件社区，下载别人训练的模型",
+      "url": "https://civitai.com",
+      "tags": [
+        "模型",
+        "SD",
+        "社区"
+      ],
+      "type": "社区",
+      "en": "Civitai",
+      "en_desc": "AI art models community"
+    },
+    {
+      "name": "Monica",
+      "desc": "浏览器AI助手插件，集成多个主流模型",
+      "url": "https://monica.im",
+      "tags": [
+        "插件",
+        "浏览器",
+        "多模型"
+      ],
+      "type": "工具",
+      "en": "Monica",
+      "en_desc": "AI browser assistant"
+    },
+    {
+      "name": "Bolt.new",
+      "desc": "AI生成全栈网页应用，描述需求直接出代码",
+      "url": "https://bolt.new",
+      "tags": [
+        "编程",
+        "生成",
+        "全栈"
+      ],
+      "type": "工具",
+      "en": "Bolt.new",
+      "en_desc": "AI builds web apps from text"
+    },
+    {
+      "name": "v0.dev",
+      "desc": "Vercel 出品的AI生成前端组件/页面",
+      "url": "https://v0.dev",
+      "tags": [
+        "编程",
+        "前端",
+        "生成"
+      ],
+      "type": "工具",
+      "en": "v0.dev",
+      "en_desc": "Vercel AI UI generator"
+    },
+    {
+      "name": "Tome",
+      "desc": "AI叙事演示工具，输入大纲自动生成讲演",
+      "url": "https://tome.app",
+      "tags": [
+        "演示",
+        "叙事",
+        "AI"
+      ],
+      "type": "工具",
+      "en": "Tome",
+      "en_desc": "AI storytelling presentations"
+    },
+    {
+      "name": "Perplexity Pro",
+      "desc": "Perplexity 付费版，不限次搜索+上传文件",
+      "url": "https://perplexity.ai",
+      "tags": [
+        "搜索",
+        "专业",
+        "文件"
+      ],
+      "type": "工具",
+      "en": "Perplexity Pro",
+      "en_desc": "Unlimited AI search"
+    },
+    {
+      "name": "Replit",
+      "desc": "在线IDE + AI编程助手，浏览器内写代码",
+      "url": "https://replit.com",
+      "tags": [
+        "编程",
+        "在线",
+        "IDE"
+      ],
+      "type": "工具",
+      "en": "Replit",
+      "en_desc": "Online IDE with AI coding"
+    }
   ],
   "效率模板": [
-    {"name": "Notion 模板库", "desc": "官方Notion模板库，免费使用各种工作/学习模板", "url": "https://notion.so/templates", "tags": ["Notion", "模板", "免费"], "type": "平台"},
-    {"name": "Obsidian 社区主题", "desc": "Obsidian 官方主题库，免费更换笔记外观", "url": "https://obsidian.md/themes", "tags": ["Obsidian", "主题", "免费"], "type": "平台"},
-    {"name": "Obsidian 插件市场", "desc": "Obsidian 社区插件，把笔记变成想要的样子", "url": "https://obsidian.md/plugins", "tags": ["Obsidian", "插件", "扩展"], "type": "平台"},
-    {"name": "Trello 模板", "desc": "Trello 看板模板，项目管理一站式", "url": "https://trello.com/templates", "tags": ["项目管理", "看板", "模板"], "type": "平台"},
-    {"name": "Google Sheets 模板", "desc": "Google Sheets 免费模板库，预算/排期/报表", "url": "https://sheets.google.com/create", "tags": ["表格", "预算", "排期"], "type": "平台"},
-    {"name": "Office 模板 (微软)", "desc": "微软官方 Office 模板库，PPT/Word/Excel 模板", "url": "https://templates.office.com", "tags": ["Office", "PPT", "模板"], "type": "平台"},
-    {"name": "Todoist", "desc": "待办事项管理，跨平台同步，免费版够用", "url": "https://todoist.com", "tags": ["待办", "管理", "免费"], "type": "工具"},
-    {"name": "TickTick (滴答清单)", "desc": "国产待办/番茄钟/习惯追踪全能工具", "url": "https://ticktick.com", "tags": ["待办", "番茄钟", "国产"], "type": "工具"},
-    {"name": "Forest", "desc": "番茄钟专注App，种树游戏化防止刷手机", "url": "https://forestapp.cc", "tags": ["专注", "番茄钟", "游戏化"], "type": "应用"},
-    {"name": "Habitica", "desc": "游戏化习惯追踪，RPG打怪模式养成习惯", "url": "https://habitica.com", "tags": ["习惯", "游戏化", "RPG"], "type": "应用"},
-    {"name": "Milanote", "desc": "创意项目看板，视觉化整理灵感", "url": "https://milanote.com", "tags": ["创意", "看板", "视觉"], "type": "工具"},
-    {"name": "Coda", "desc": "Notion 替代品，文档和表格深度融合", "url": "https://coda.io", "tags": ["文档", "表格", "协作"], "type": "工具"},
-    {"name": "Zapier", "desc": "自动化工作流连接器，免费版做5个Zap", "url": "https://zapier.com", "tags": ["自动化", "集成", "工作流"], "type": "工具"},
-    {"name": "Make (Integromat)", "desc": "可视化自动化工作流平台，比Zapier更灵活", "url": "https://make.com", "tags": ["自动化", "可视化", "工作流"], "type": "工具"},
-    {"name": "IFTTT", "desc": "简单自动化工具，连接各种App和服务", "url": "https://ifttt.com", "tags": ["自动化", "App", "简单"], "type": "工具"},
-    {"name": "Raycast", "desc": "Mac效率启动器，替代Alfred/Spotlight", "url": "https://raycast.com", "tags": ["Mac", "启动器", "效率"], "type": "工具"},
-    {"name": "RescueTime", "desc": "自动追踪时间花费，分析你的工作效率", "url": "https://rescuetime.com", "tags": ["时间", "分析", "效率"], "type": "工具"},
-    {"name": "Slite", "desc": "轻量团队知识库，内置AI文档助手", "url": "https://slite.com", "tags": ["知识库", "团队", "AI"], "type": "工具"},
-    {"name": "Linear", "desc": "团队项目管理工具，界面简洁体验极好", "url": "https://linear.app", "tags": ["项目管理", "团队", "简洁"], "type": "工具"},
-    {"name": "Canva 文档模板", "desc": "Canva 内置文档/简历/提案模板，设计美观", "url": "https://canva.com/templates", "tags": ["文档", "简历", "模板"], "type": "平台"},
-    {"name": "Google Data Studio", "desc": "免费数据可视化报表工具，连接各种数据源", "url": "https://datastudio.google.com", "tags": ["报表", "可视化", "免费"], "type": "工具"},
-    {"name": "Notion", "desc": "全能协作笔记/数据库/项目管理一体工具", "url": "https://notion.so", "tags": ["笔记", "数据库", "协作"], "type": "工具"},
-    {"name": "Notion 中文模板", "desc": "Notion 中文社区模板分享，适配国内用户", "url": "https://notionchina.cn", "tags": ["Notion", "中文", "模板"], "type": "社区"},
-    {"name": "PowerToys", "desc": "微软官方Windows效率工具包，各种实用小工具", "url": "https://learn.microsoft.com/windows/powertoys", "tags": ["Windows", "工具集", "微软"], "type": "软件"},
-    {"name": "uTools", "desc": "国产效率启动器，插件丰富，提升操作效率", "url": "https://u.tools", "tags": ["启动器", "插件", "国产"], "type": "软件"}
+    {
+      "name": "Notion 模板库",
+      "desc": "官方Notion模板库，免费使用各种工作/学习模板",
+      "url": "https://notion.so/templates",
+      "tags": [
+        "Notion",
+        "模板",
+        "免费"
+      ],
+      "type": "平台",
+      "en": "Notion Templates",
+      "en_desc": "Official free templates"
+    },
+    {
+      "name": "Obsidian 社区主题",
+      "desc": "Obsidian 官方主题库，免费更换笔记外观",
+      "url": "https://obsidian.md/themes",
+      "tags": [
+        "Obsidian",
+        "主题",
+        "免费"
+      ],
+      "type": "平台",
+      "en": "Obsidian Themes",
+      "en_desc": "Free community themes"
+    },
+    {
+      "name": "Obsidian 插件市场",
+      "desc": "Obsidian 社区插件，把笔记变成想要的样子",
+      "url": "https://obsidian.md/plugins",
+      "tags": [
+        "Obsidian",
+        "插件",
+        "扩展"
+      ],
+      "type": "平台",
+      "en": "Obsidian Plugins",
+      "en_desc": "Extend your notes"
+    },
+    {
+      "name": "Trello 模板",
+      "desc": "Trello 看板模板，项目管理一站式",
+      "url": "https://trello.com/templates",
+      "tags": [
+        "项目管理",
+        "看板",
+        "模板"
+      ],
+      "type": "平台",
+      "en": "Trello Templates",
+      "en_desc": "Project management templates"
+    },
+    {
+      "name": "Google Sheets 模板",
+      "desc": "Google Sheets 免费模板库，预算/排期/报表",
+      "url": "https://sheets.google.com/create",
+      "tags": [
+        "表格",
+        "预算",
+        "排期"
+      ],
+      "type": "平台",
+      "en": "Google Sheets Templates",
+      "en_desc": "Free budget & schedule templates"
+    },
+    {
+      "name": "Office 模板 (微软)",
+      "desc": "微软官方 Office 模板库，PPT/Word/Excel 模板",
+      "url": "https://templates.office.com",
+      "tags": [
+        "Office",
+        "PPT",
+        "模板"
+      ],
+      "type": "平台",
+      "en": "MS Office Templates",
+      "en_desc": "Free PPT/Word/Excel templates"
+    },
+    {
+      "name": "Todoist",
+      "desc": "待办事项管理，跨平台同步，免费版够用",
+      "url": "https://todoist.com",
+      "tags": [
+        "待办",
+        "管理",
+        "免费"
+      ],
+      "type": "工具",
+      "en": "Todoist",
+      "en_desc": "Cross-platform task management"
+    },
+    {
+      "name": "TickTick (滴答清单)",
+      "desc": "国产待办/番茄钟/习惯追踪全能工具",
+      "url": "https://ticktick.com",
+      "tags": [
+        "待办",
+        "番茄钟",
+        "国产"
+      ],
+      "type": "工具",
+      "en": "TickTick",
+      "en_desc": "To-do + Pomodoro + Habits"
+    },
+    {
+      "name": "Forest",
+      "desc": "番茄钟专注App，种树游戏化防止刷手机",
+      "url": "https://forestapp.cc",
+      "tags": [
+        "专注",
+        "番茄钟",
+        "游戏化"
+      ],
+      "type": "应用",
+      "en": "Forest",
+      "en_desc": "Gamified focus timer app"
+    },
+    {
+      "name": "Habitica",
+      "desc": "游戏化习惯追踪，RPG打怪模式养成习惯",
+      "url": "https://habitica.com",
+      "tags": [
+        "习惯",
+        "游戏化",
+        "RPG"
+      ],
+      "type": "应用",
+      "en": "Habitica",
+      "en_desc": "RPG gamified habit tracker"
+    },
+    {
+      "name": "Milanote",
+      "desc": "创意项目看板，视觉化整理灵感",
+      "url": "https://milanote.com",
+      "tags": [
+        "创意",
+        "看板",
+        "视觉"
+      ],
+      "type": "工具",
+      "en": "Milanote",
+      "en_desc": "Visual creative project board"
+    },
+    {
+      "name": "Coda",
+      "desc": "Notion 替代品，文档和表格深度融合",
+      "url": "https://coda.io",
+      "tags": [
+        "文档",
+        "表格",
+        "协作"
+      ],
+      "type": "工具",
+      "en": "Coda",
+      "en_desc": "Docs & tables deep integration"
+    },
+    {
+      "name": "Zapier",
+      "desc": "自动化工作流连接器，免费版做5个Zap",
+      "url": "https://zapier.com",
+      "tags": [
+        "自动化",
+        "集成",
+        "工作流"
+      ],
+      "type": "工具",
+      "en": "Zapier",
+      "en_desc": "Connect 5000+ apps automatically"
+    },
+    {
+      "name": "Make (Integromat)",
+      "desc": "可视化自动化工作流平台，比Zapier更灵活",
+      "url": "https://make.com",
+      "tags": [
+        "自动化",
+        "可视化",
+        "工作流"
+      ],
+      "type": "工具",
+      "en": "Make (Integromat)",
+      "en_desc": "Visual automation platform"
+    },
+    {
+      "name": "IFTTT",
+      "desc": "简单自动化工具，连接各种App和服务",
+      "url": "https://ifttt.com",
+      "tags": [
+        "自动化",
+        "App",
+        "简单"
+      ],
+      "type": "工具",
+      "en": "IFTTT",
+      "en_desc": "Simple app automation"
+    },
+    {
+      "name": "Raycast",
+      "desc": "Mac效率启动器，替代Alfred/Spotlight",
+      "url": "https://raycast.com",
+      "tags": [
+        "Mac",
+        "启动器",
+        "效率"
+      ],
+      "type": "工具",
+      "en": "Raycast",
+      "en_desc": "Mac productivity launcher"
+    },
+    {
+      "name": "RescueTime",
+      "desc": "自动追踪时间花费，分析你的工作效率",
+      "url": "https://rescuetime.com",
+      "tags": [
+        "时间",
+        "分析",
+        "效率"
+      ],
+      "type": "工具",
+      "en": "RescueTime",
+      "en_desc": "Automatic time tracking"
+    },
+    {
+      "name": "Slite",
+      "desc": "轻量团队知识库，内置AI文档助手",
+      "url": "https://slite.com",
+      "tags": [
+        "知识库",
+        "团队",
+        "AI"
+      ],
+      "type": "工具",
+      "en": "Slite",
+      "en_desc": "Lightweight team knowledge base"
+    },
+    {
+      "name": "Linear",
+      "desc": "团队项目管理工具，界面简洁体验极好",
+      "url": "https://linear.app",
+      "tags": [
+        "项目管理",
+        "团队",
+        "简洁"
+      ],
+      "type": "工具",
+      "en": "Linear",
+      "en_desc": "Sleek project management tool"
+    },
+    {
+      "name": "Canva 文档模板",
+      "desc": "Canva 内置文档/简历/提案模板，设计美观",
+      "url": "https://canva.com/templates",
+      "tags": [
+        "文档",
+        "简历",
+        "模板"
+      ],
+      "type": "平台",
+      "en": "Canva Templates",
+      "en_desc": "Beautiful document templates"
+    },
+    {
+      "name": "Google Data Studio",
+      "desc": "免费数据可视化报表工具，连接各种数据源",
+      "url": "https://datastudio.google.com",
+      "tags": [
+        "报表",
+        "可视化",
+        "免费"
+      ],
+      "type": "工具",
+      "en": "Google Data Studio",
+      "en_desc": "Free data visualization"
+    },
+    {
+      "name": "Notion",
+      "desc": "全能协作笔记/数据库/项目管理一体工具",
+      "url": "https://notion.so",
+      "tags": [
+        "笔记",
+        "数据库",
+        "协作"
+      ],
+      "type": "工具",
+      "en": "Notion",
+      "en_desc": "All-in-one workspace"
+    },
+    {
+      "name": "Notion 中文模板",
+      "desc": "Notion 中文社区模板分享，适配国内用户",
+      "url": "https://notionchina.cn",
+      "tags": [
+        "Notion",
+        "中文",
+        "模板"
+      ],
+      "type": "社区",
+      "en": "Notion CN Templates",
+      "en_desc": "Chinese community templates"
+    },
+    {
+      "name": "PowerToys",
+      "desc": "微软官方Windows效率工具包，各种实用小工具",
+      "url": "https://learn.microsoft.com/windows/powertoys",
+      "tags": [
+        "Windows",
+        "工具集",
+        "微软"
+      ],
+      "type": "软件",
+      "en": "Microsoft PowerToys",
+      "en_desc": "Windows power utilities pack"
+    },
+    {
+      "name": "uTools",
+      "desc": "国产效率启动器，插件丰富，提升操作效率",
+      "url": "https://u.tools",
+      "tags": [
+        "启动器",
+        "插件",
+        "国产"
+      ],
+      "type": "软件",
+      "en": "uTools",
+      "en_desc": "Chinese productivity launcher"
+    }
   ],
   "搞钱/副业资源": [
-    {"name": "Upwork", "desc": "全球最大自由职业平台，接单做翻译/设计/编程", "url": "https://upwork.com", "tags": ["接单", "全球", "自由职业"], "type": "平台"},
-    {"name": "Fiverr", "desc": "全球零工平台，卖服务从$5起", "url": "https://fiverr.com", "tags": ["接单", "零工", "服务"], "type": "平台"},
-    {"name": "猪八戒网", "desc": "国内最大服务交易平台", "url": "https://zbj.com", "tags": ["接单", "国内", "服务"], "type": "平台"},
-    {"name": "闲鱼", "desc": "二手交易平台，也可卖虚拟资料/课程/代找资源", "url": "https://goofish.com", "tags": ["二手", "卖货", "虚拟"], "type": "平台"},
-    {"name": "小红书 引流变现", "desc": "小红书做内容号，积累粉丝后接广告/带货", "url": "https://xiaohongshu.com", "tags": ["内容", "引流", "带货"], "type": "平台"},
-    {"name": "公众号流量主", "desc": "微信写公众号，500粉开通流量主广告收益", "url": "https://mp.weixin.qq.com", "tags": ["写作", "流量主", "广告"], "type": "平台"},
-    {"name": "YouTube 广告分成", "desc": "YouTube创收，1000粉+4000小时可开通广告", "url": "https://youtube.com", "tags": ["视频", "广告", "全球"], "type": "平台"},
-    {"name": "Google AdSense", "desc": "网站/博客放广告赚广告费，有流量就有收入", "url": "https://adsense.google.com", "tags": ["广告", "网站", "被动"], "type": "平台"},
-    {"name": "Shopify 开店", "desc": "建立自己的在线商店，14天免费试用", "url": "https://shopify.com", "tags": ["开店", "电商", "建站"], "type": "平台"},
-    {"name": "Etsy 手工艺品", "desc": "卖手工制品/数字产品/设计模板，全球买家", "url": "https://etsy.com", "tags": ["手工艺", "设计", "全球"], "type": "平台"},
-    {"name": "Affiliate 联盟营销", "desc": "推广产品拿佣金，Amazon/淘宝客/各类AI工具", "url": "https://affiliate-program.amazon.com", "tags": ["推广", "佣金", "联盟"], "type": "模式"},
-    {"name": "知识星球", "desc": "付费社群工具，沉淀干货/问答/资源分享", "url": "https://zsxq.com", "tags": ["社群", "付费", "知识"], "type": "平台"},
-    {"name": "小鹅通", "desc": "卖课程/专栏/社群会员，知识变现工具", "url": "https://xiaoe-tech.com", "tags": ["课程", "知识付费", "社群"], "type": "平台"},
-    {"name": "知乎好物推荐", "desc": "知乎写回答插入商品链接赚佣金", "url": "https://zhihu.com", "tags": ["写作", "推荐", "佣金"], "type": "平台"},
-    {"name": "程序员接单（程序员客栈）", "desc": "国内程序员接外包项目平台", "url": "https://proginn.com", "tags": ["编程", "接单", "外包"], "type": "平台"},
-    {"name": "淘宝客", "desc": "推广淘宝商品拿佣金，适合有流量渠道的人", "url": "https://alimama.com", "tags": ["推广", "淘宝", "佣金"], "type": "平台"},
-    {"name": "摄影图库（Shutterstock等）", "desc": "卖照片/插画素材，一次上传多次被动收入", "url": "https://shutterstock.com", "tags": ["摄影", "素材", "被动"], "type": "平台"},
-    {"name": "配音/有声书接单", "desc": "喜马拉雅/懒人听书等平台录制有声书赚稿费", "url": "https://ximalaya.com", "tags": ["配音", "有声书", "录制"], "type": "平台"},
-    {"name": "Telegram 群组变现", "desc": "通过TG群/频道做广告位/付费会员/导航变现", "url": "https://telegram.org", "tags": ["Telegram", "广告", "变现"], "type": "模式"},
-    {"name": "跨境电商（速卖通）", "desc": "Aliexpress 面向全球卖货，轻资产启动", "url": "https://aliexpress.com", "tags": ["电商", "跨境", "卖货"], "type": "平台"},
-    {"name": "加密货币空投/交互", "desc": "参与新项目测试交互赚空投奖励", "url": "https://airdropalert.com", "tags": ["空投", "加密", "测试"], "type": "模式"},
-    {"name": "兼职翻译平台", "desc": "Proz等平台接翻译工作，在家就能做", "url": "https://proz.com", "tags": ["翻译", "兼职", "接单"], "type": "平台"},
-    {"name": "TikTok 创作者基金", "desc": "TikTok 发短视频赚创作者基金", "url": "https://tiktok.com", "tags": ["短视频", "基金", "全球"], "type": "平台"},
-    {"name": "SEO 网站站群", "desc": "建立多个网站做SEO获取搜索引擎流量变现", "url": "https://ahrefs.com", "tags": ["SEO", "网站", "流量"], "type": "模式"},
-    {"name": "美团/饿了么副业", "desc": "业余跑外卖/送快递，时间灵活即时变现", "url": "https://peisong.meituan.com", "tags": ["副业", "跑腿", "灵活"], "type": "平台"},
-    {"name": "虚拟助理服务", "desc": "帮人整理资料/做PPT/管理日程，时间换钱", "url": "https://belay.com", "tags": ["助理", "服务", "远程"], "type": "模式"},
-    {"name": "Telegram 收费群", "desc": "建付费Telegram群，月费制提供独家资源/指导", "url": "https://telegram.org", "tags": ["付费群", "独家", "月费"], "type": "模式"},
-    {"name": "抖音 创作基金", "desc": "抖音发视频赚创作基金，积累粉丝后直播带货", "url": "https://douyin.com", "tags": ["短视频", "直播", "带货"], "type": "平台"},
-    {"name": "Affiliate（淘宝联盟）", "desc": "阿里妈妈旗下，推广淘宝商品赚佣金", "url": "https://pub.alimama.com", "tags": ["推广", "淘宝", "佣金"], "type": "平台"},
-    {"name": "跨境独立站 (Shopify)", "desc": "搭建自己品牌的独立站卖货到全球", "url": "https://shopify.com", "tags": ["建站", "跨境", "卖货"], "type": "平台"}
+    {
+      "name": "Upwork",
+      "desc": "全球最大自由职业平台，接单做翻译/设计/编程",
+      "url": "https://upwork.com",
+      "tags": [
+        "接单",
+        "全球",
+        "自由职业"
+      ],
+      "type": "平台",
+      "en": "Upwork",
+      "en_desc": "World's largest freelancing platform"
+    },
+    {
+      "name": "Fiverr",
+      "desc": "全球零工平台，卖服务从$5起",
+      "url": "https://fiverr.com",
+      "tags": [
+        "接单",
+        "零工",
+        "服务"
+      ],
+      "type": "平台",
+      "en": "Fiverr",
+      "en_desc": "Global gig marketplace from $5"
+    },
+    {
+      "name": "猪八戒网",
+      "desc": "国内最大服务交易平台",
+      "url": "https://zbj.com",
+      "tags": [
+        "接单",
+        "国内",
+        "服务"
+      ],
+      "type": "平台",
+      "en": "Zhubajie",
+      "en_desc": "China's largest service marketplace"
+    },
+    {
+      "name": "闲鱼",
+      "desc": "二手交易平台，也可卖虚拟资料/课程/代找资源",
+      "url": "https://goofish.com",
+      "tags": [
+        "二手",
+        "卖货",
+        "虚拟"
+      ],
+      "type": "平台",
+      "en": "Xianyu",
+      "en_desc": "Alibaba's second-hand & digital goods"
+    },
+    {
+      "name": "小红书 引流变现",
+      "desc": "小红书做内容号，积累粉丝后接广告/带货",
+      "url": "https://xiaohongshu.com",
+      "tags": [
+        "内容",
+        "引流",
+        "带货"
+      ],
+      "type": "平台",
+      "en": "Xiaohongshu Monetization",
+      "en_desc": "Content → followers → money"
+    },
+    {
+      "name": "公众号流量主",
+      "desc": "微信写公众号，500粉开通流量主广告收益",
+      "url": "https://mp.weixin.qq.com",
+      "tags": [
+        "写作",
+        "流量主",
+        "广告"
+      ],
+      "type": "平台",
+      "en": "WeChat Official Account Ads",
+      "en_desc": "Earn from WeChat articles"
+    },
+    {
+      "name": "YouTube 广告分成",
+      "desc": "YouTube创收，1000粉+4000小时可开通广告",
+      "url": "https://youtube.com",
+      "tags": [
+        "视频",
+        "广告",
+        "全球"
+      ],
+      "type": "平台",
+      "en": "YouTube Ad Revenue",
+      "en_desc": "Earn from video ads"
+    },
+    {
+      "name": "Google AdSense",
+      "desc": "网站/博客放广告赚广告费，有流量就有收入",
+      "url": "https://adsense.google.com",
+      "tags": [
+        "广告",
+        "网站",
+        "被动"
+      ],
+      "type": "平台",
+      "en": "Google AdSense",
+      "en_desc": "Earn from website ads"
+    },
+    {
+      "name": "Shopify 开店",
+      "desc": "建立自己的在线商店，14天免费试用",
+      "url": "https://shopify.com",
+      "tags": [
+        "开店",
+        "电商",
+        "建站"
+      ],
+      "type": "平台",
+      "en": "Shopify",
+      "en_desc": "Build your online store"
+    },
+    {
+      "name": "Etsy 手工艺品",
+      "desc": "卖手工制品/数字产品/设计模板，全球买家",
+      "url": "https://etsy.com",
+      "tags": [
+        "手工艺",
+        "设计",
+        "全球"
+      ],
+      "type": "平台",
+      "en": "Etsy",
+      "en_desc": "Sell handmade & digital globally"
+    },
+    {
+      "name": "Affiliate 联盟营销",
+      "desc": "推广产品拿佣金，Amazon/淘宝客/各类AI工具",
+      "url": "https://affiliate-program.amazon.com",
+      "tags": [
+        "推广",
+        "佣金",
+        "联盟"
+      ],
+      "type": "模式",
+      "en": "Affiliate Marketing",
+      "en_desc": "Earn commissions promoting products"
+    },
+    {
+      "name": "知识星球",
+      "desc": "付费社群工具，沉淀干货/问答/资源分享",
+      "url": "https://zsxq.com",
+      "tags": [
+        "社群",
+        "付费",
+        "知识"
+      ],
+      "type": "平台",
+      "en": "Zsxq - Paid Community",
+      "en_desc": "Premium content community platform"
+    },
+    {
+      "name": "小鹅通",
+      "desc": "卖课程/专栏/社群会员，知识变现工具",
+      "url": "https://xiaoe-tech.com",
+      "tags": [
+        "课程",
+        "知识付费",
+        "社群"
+      ],
+      "type": "平台",
+      "en": "XiaoE Tech",
+      "en_desc": "Sell courses & memberships"
+    },
+    {
+      "name": "知乎好物推荐",
+      "desc": "知乎写回答插入商品链接赚佣金",
+      "url": "https://zhihu.com",
+      "tags": [
+        "写作",
+        "推荐",
+        "佣金"
+      ],
+      "type": "平台",
+      "en": "Zhihu Product Recs",
+      "en_desc": "Earn from Zhihu article links"
+    },
+    {
+      "name": "程序员接单（程序员客栈）",
+      "desc": "国内程序员接外包项目平台",
+      "url": "https://proginn.com",
+      "tags": [
+        "编程",
+        "接单",
+        "外包"
+      ],
+      "type": "平台",
+      "en": "Proginn - Freelance Coding",
+      "en_desc": "China's dev outsourcing platform"
+    },
+    {
+      "name": "淘宝客",
+      "desc": "推广淘宝商品拿佣金，适合有流量渠道的人",
+      "url": "https://alimama.com",
+      "tags": [
+        "推广",
+        "淘宝",
+        "佣金"
+      ],
+      "type": "平台",
+      "en": "Taobao Affiliate",
+      "en_desc": "Earn promoting Taobao products"
+    },
+    {
+      "name": "摄影图库（Shutterstock等）",
+      "desc": "卖照片/插画素材，一次上传多次被动收入",
+      "url": "https://shutterstock.com",
+      "tags": [
+        "摄影",
+        "素材",
+        "被动"
+      ],
+      "type": "平台",
+      "en": "Stock Photography",
+      "en_desc": "Passive income from photos"
+    },
+    {
+      "name": "配音/有声书接单",
+      "desc": "喜马拉雅/懒人听书等平台录制有声书赚稿费",
+      "url": "https://ximalaya.com",
+      "tags": [
+        "配音",
+        "有声书",
+        "录制"
+      ],
+      "type": "平台",
+      "en": "Voice-over & Audiobook",
+      "en_desc": "Record audiobooks for money"
+    },
+    {
+      "name": "Telegram 群组变现",
+      "desc": "通过TG群/频道做广告位/付费会员/导航变现",
+      "url": "https://telegram.org",
+      "tags": [
+        "Telegram",
+        "广告",
+        "变现"
+      ],
+      "type": "模式",
+      "en": "TG Group Monetization",
+      "en_desc": "Monetize your Telegram groups"
+    },
+    {
+      "name": "跨境电商（速卖通）",
+      "desc": "Aliexpress 面向全球卖货，轻资产启动",
+      "url": "https://aliexpress.com",
+      "tags": [
+        "电商",
+        "跨境",
+        "卖货"
+      ],
+      "type": "平台",
+      "en": "Cross-border E-commerce",
+      "en_desc": "Sell globally on AliExpress"
+    },
+    {
+      "name": "加密货币空投/交互",
+      "desc": "参与新项目测试交互赚空投奖励",
+      "url": "https://airdropalert.com",
+      "tags": [
+        "空投",
+        "加密",
+        "测试"
+      ],
+      "type": "模式",
+      "en": "Crypto Airdrops",
+      "en_desc": "Earn from testnet interactions"
+    },
+    {
+      "name": "兼职翻译平台",
+      "desc": "Proz等平台接翻译工作，在家就能做",
+      "url": "https://proz.com",
+      "tags": [
+        "翻译",
+        "兼职",
+        "接单"
+      ],
+      "type": "平台",
+      "en": "Freelance Translation",
+      "en_desc": "Get paid for translations"
+    },
+    {
+      "name": "TikTok 创作者基金",
+      "desc": "TikTok 发短视频赚创作者基金",
+      "url": "https://tiktok.com",
+      "tags": [
+        "短视频",
+        "基金",
+        "全球"
+      ],
+      "type": "平台",
+      "en": "TikTok Creator Fund",
+      "en_desc": "Earn from short videos"
+    },
+    {
+      "name": "SEO 网站站群",
+      "desc": "建立多个网站做SEO获取搜索引擎流量变现",
+      "url": "https://ahrefs.com",
+      "tags": [
+        "SEO",
+        "网站",
+        "流量"
+      ],
+      "type": "模式",
+      "en": "SEO Website Network",
+      "en_desc": "Earn from search traffic"
+    },
+    {
+      "name": "美团/饿了么副业",
+      "desc": "业余跑外卖/送快递，时间灵活即时变现",
+      "url": "https://peisong.meituan.com",
+      "tags": [
+        "副业",
+        "跑腿",
+        "灵活"
+      ],
+      "type": "平台",
+      "en": "Meituan Delivery",
+      "en_desc": "Flexible delivery side hustle"
+    },
+    {
+      "name": "虚拟助理服务",
+      "desc": "帮人整理资料/做PPT/管理日程，时间换钱",
+      "url": "https://belay.com",
+      "tags": [
+        "助理",
+        "服务",
+        "远程"
+      ],
+      "type": "模式",
+      "en": "Virtual Assistant",
+      "en_desc": "Remote admin support"
+    },
+    {
+      "name": "Telegram 收费群",
+      "desc": "建付费Telegram群，月费制提供独家资源/指导",
+      "url": "https://telegram.org",
+      "tags": [
+        "付费群",
+        "独家",
+        "月费"
+      ],
+      "type": "模式",
+      "en": "TG Paid Groups",
+      "en_desc": "Monthly subscription groups"
+    },
+    {
+      "name": "抖音 创作基金",
+      "desc": "抖音发视频赚创作基金，积累粉丝后直播带货",
+      "url": "https://douyin.com",
+      "tags": [
+        "短视频",
+        "直播",
+        "带货"
+      ],
+      "type": "平台",
+      "en": "Douyin Creator Fund",
+      "en_desc": "Earn from Douyin videos"
+    },
+    {
+      "name": "Affiliate（淘宝联盟）",
+      "desc": "阿里妈妈旗下，推广淘宝商品赚佣金",
+      "url": "https://pub.alimama.com",
+      "tags": [
+        "推广",
+        "淘宝",
+        "佣金"
+      ],
+      "type": "平台",
+      "en": "Taobao Union",
+      "en_desc": "Alimama affiliate network"
+    },
+    {
+      "name": "跨境独立站 (Shopify)",
+      "desc": "搭建自己品牌的独立站卖货到全球",
+      "url": "https://shopify.com",
+      "tags": [
+        "建站",
+        "跨境",
+        "卖货"
+      ],
+      "type": "平台",
+      "en": "Cross-border Shopify",
+      "en_desc": "Build your global brand"
+    }
   ]
 }

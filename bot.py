@@ -80,13 +80,19 @@ async def search(u, c):
     for r in results: grp[r["category"]].append(r)
     msg = _(f"🔍 **「{q}」结果（{len(results)} 条）**\n\n",f"🔍 **{q}** ({len(results)} results)\n\n")
     for cat, items in grp.items():
-        for item in items: msg += f"  • [{item['name']}]({item['url']}) — {item['desc'][:50]}\n"; msg += "\n"
+        for item in items:
+            en_name = item.get("en", item["name"])
+            msg += f"  • [{item['name']}]({item['url']}) / {en_name}\n"
+            msg += f"    {item['desc'][:50]}\n"
+        msg += "\n"
     await u.message.reply_text(msg, parse_mode="Markdown", disable_web_page_preview=True)
 
 async def daily(u, c):
     cat = random.choice(CATEGORIES); item = random.choice(RESOURCES[cat])
+    en_name = item.get("en", item["name"])
+    en_desc = item.get("en_desc", "")
     msg = _("⭐ **今日推荐 / Daily Pick**\n\n","⭐ **Daily Pick**\n\n")
-    msg += f"{get_emoji(cat)} **{item['name']}**\n   {item['desc']}\n   🔗 {item['url']}\n   📂 {cat}"
+    msg += f"{get_emoji(cat)} [{item['name']}]({item['url']})\n   {item['desc']}\n   💬 {en_name}: {en_desc}\n   📂 {cat}"
     await u.message.reply_text(msg, parse_mode="Markdown")
 
 async def submit(u, c):
@@ -125,7 +131,13 @@ async def button_handler(u, c):
             msg = f"{get_emoji(cat_name)} **{CN_FREE.get(cat_name, cat_name)}** ({total}) — {CATEGORY_EN.get(cat_name, '')}\n\n"
             for i in range(s, e):
                 item = items[i]
-                msg += f"{i+1}. [{item['name']}]({item['url']})\n   {item['desc'][:60]}\n\n"
+                en_name = item.get("en", item["name"])
+                en_desc = item.get("en_desc", "")
+                msg += f"{i+1}. [{item['name']}]({item['url']}) / {en_name}\n"
+                msg += f"   {item['desc'][:60]}\n"
+                if en_desc:
+                    msg += f"   💬 {en_desc[:60]}\n"
+                msg += "\n"
             nav_row = []
             if page > 0: nav_row.append(InlineKeyboardButton("◀️", callback_data=f"cat:{cat_name}:{page-1}"))
             nav_row.append(InlineKeyboardButton(f"{page+1}/{tp}", callback_data="noop"))
