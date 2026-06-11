@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { display: flex; justify-content: center; align-items: center; min-height: 100vh; background: #1a1a2e; font-family: -apple-system, 'Segoe UI', Roboto, sans-serif; }
+  
+  .avatar {
+    width: 512px; height: 512px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  }
+
+  /* Glow backgrounds */
+  .glow1 {
+    position: absolute; width: 320px; height: 320px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(0, 210, 255, 0.2), transparent 70%);
+    top: -60px; right: -40px;
+  }
+  .glow2 {
+    position: absolute; width: 260px; height: 260px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(120, 80, 255, 0.15), transparent 70%);
+    bottom: -40px; left: -60px;
+  }
+
+  /* Search icon - bigger for circular crop */
+  .search-icon {
+    width: 120px; height: 120px;
+    border: 8px solid #00d2ff;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 12px;
+    box-shadow: 0 0 50px rgba(0, 210, 255, 0.4);
+  }
+  .search-icon::after {
+    content: '';
+    position: absolute;
+    width: 8px; height: 60px;
+    background: #00d2ff;
+    bottom: -35px; right: -18px;
+    transform: rotate(45deg);
+    border-radius: 4px;
+    box-shadow: 0 0 30px rgba(0, 210, 255, 0.4);
+  }
+
+  .tg-text {
+    font-size: 56px; font-weight: 800;
+    background: linear-gradient(135deg, #ffffff, #b8b8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 4px;
+    text-shadow: none;
+  }
+</style>
+</head>
+<body>
+  <div class="avatar">
+    <div class="glow1"></div>
+    <div class="glow2"></div>
+    <div class="search-icon"></div>
+    <div class="tg-text">TG SEARCH</div>
+  </div>
+</body>
+</html>
