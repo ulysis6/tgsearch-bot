@@ -50,10 +50,7 @@ def search_resources(query, mx=8):
     return [item for item in SEARCH_INDEX if all(t in item["_search_text"] for t in tms)][:mx]
 
 async def start(u, c):
-    await u.message.reply_text(_(
-        "👋 欢迎使用 **TG Search**！\n\n我是免费资源 + AI工具导航助手\n直接输入关键词就能搜索\n\n📌 **可用命令**\n/search <关键词> — 搜索\n/categories — 所有分类（可点击）\n/daily — 每日推荐\n/help — 帮助",
-        "👋 Welcome to **TG Search**!\n\nFree Resources + AI Tools Navigator\nJust type keywords to search\n\n📌 **Commands**\n/search <keyword> — Search\n/categories — Browse (clickable)\n/daily — Daily pick\n/help — Help"
-    ), parse_mode="Markdown")
+    await categories(u, c)
 
 async def help_cmd(u, c):
     await u.message.reply_text(_(
