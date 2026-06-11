@@ -38,8 +38,8 @@ def build_categories_kb():
         buttons.append([btn])
     # 添加toolmixr和genaipick网站入口
     buttons.append([
-        InlineKeyboardButton("🛠 toolmixr.com — 最全免费工具", url="https://toolmixr.com"),
-        InlineKeyboardButton("🤖 genaipick.com — 最新AI测评", url="https://genaipick.com"),
+        InlineKeyboardButton("🛠 最全免费工具 - Free Online Tools", url="https://toolmixr.com"),
+        InlineKeyboardButton("🤖 最新AI测评 - Latest AI Reviews", url="https://genaipick.com"),
     ])
     return buttons
 
