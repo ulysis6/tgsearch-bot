@@ -35,11 +35,10 @@ def build_menu_kb():
     """首页菜单按钮"""
     btns = []
     for cat in CATEGORIES:
-        btns.append([InlineKeyboardButton(f"{get_emoji(cat)} {cat} ({len(RESOURCES[cat])})", callback_data=f"cat:{cat}:0")])
-    btns.append([
-        InlineKeyboardButton("🛠 最全免费工具 - Free Online Tools", url="https://toolmixr.com"),
-        InlineKeyboardButton("🤖 最新AI测评 - Latest AI Reviews", url="https://genaipick.com"),
-    ])
+        label = f"{get_emoji(cat)} {cat} - {CATEGORY_EN.get(cat, '')} ({len(RESOURCES[cat])})"
+        btns.append([InlineKeyboardButton(label, callback_data=f"cat:{cat}:0")])
+    btns.append([InlineKeyboardButton("🛠 最全免费工具 - Free Online Tools", url="https://toolmixr.com")])
+    btns.append([InlineKeyboardButton("🤖 最新AI测评 - Latest AI Reviews", url="https://genaipick.com")])
     return InlineKeyboardMarkup(btns)
 
 def search_resources(query, mx=8):
