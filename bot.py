@@ -138,7 +138,7 @@ async def welcome_new(u, c):
     """新人入群自动发送菜单"""
     try:
         for member in u.message.new_chat_members:
-            if member.id != u.message.bot.id:  # 排除bot自己
+            if not member.is_bot:  # 排除bot自己
                 await u.message.reply_text(_(
                     "👋 欢迎使用 **TG Search**！\n\n我是免费资源 + AI工具导航助手\n直接输入关键词就能搜索\n\n📌 **可用命令**\n/search <关键词> — 搜索\n/categories — 所有分类（可点击）\n/daily — 每日推荐\n/help — 帮助",
                     "👋 Welcome to **TG Search**!\n\nFree Resources + AI Tools Navigator\nJust type keywords to search\n\n📌 **Commands**\n/search <keyword> — Search\n/categories — Browse (clickable)\n/daily — Daily pick\n/help — Help"
