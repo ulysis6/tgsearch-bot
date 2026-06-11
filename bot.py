@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""tgsearch_nav_bot — 双语 + 可点击分类按钮 稳定版"""
+"""tgsearch_nav_bot — 分类按钮 + 分页翻页 + 双语"""
 import json, logging, os, re, random
 from collections import defaultdict
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
@@ -10,6 +10,7 @@ from telegram.ext import (Application, CommandHandler, MessageHandler,
 token = os.environ.get("TG_TOKEN", "")
 RESOURCES_FILE = "resources.json"
 BOT_USERNAME = "tgsearch_nav_all_bot"
+ITEMS_PER_PAGE = 10
 
 with open(RESOURCES_FILE, "r", encoding="utf-8") as f:
     RESOURCES = json.load(f)
@@ -27,113 +28,107 @@ for cat, items in RESOURCES.items():
 logging.basicConfig(format="%(asctime)s - %(name)s - %(levelname)s - %(message)s", level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-def _(zh, en):
-    return f"{zh}\n💬 {en}"
-
-def search_resources(query, max_results=8):
-    q = query.lower()
-    terms = [t.strip() for t in re.split(r'[\s,，、]+', q) if t.strip()]
-    if not terms: return []
-    return [item for item in SEARCH_INDEX if all(t in item["_search_text"] for t in terms)][:max_results]
-
+def _(zh, en): return f"{zh}\n💬 {en}"
 def get_emoji(cat): return CATEGORY_EMOJIS.get(cat, "📁")
 
-async def start(update, context):
-    await update.message.reply_text(_(
+def build_categories_kb():
+    buttons = []
+    for cat in CATEGORIES:
+        btn = InlineKeyboardButton(f"{get_emoji(cat)} {cat} ({len(RESOURCES[cat])})", callback_data=f"cat:{cat}:0")
+        buttons.append([btn])
+    return buttons
+
+def search_resources(query, mx=8):
+    q = query.lower()
+    tms = [t.strip() for t in re.split(r'[\s,，、]+', q) if t.strip()]
+    if not tms: return []
+    return [item for item in SEARCH_INDEX if all(t in item["_search_text"] for t in tms)][:mx]
+
+async def start(u, c):
+    await u.message.reply_text(_(
         "👋 欢迎使用 **TG Search**！\n\n我是免费资源 + AI工具导航助手\n直接输入关键词就能搜索\n\n📌 **可用命令**\n/search <关键词> — 搜索\n/categories — 所有分类（可点击）\n/daily — 每日推荐\n/help — 帮助",
         "👋 Welcome to **TG Search**!\n\nFree Resources + AI Tools Navigator\nJust type keywords to search\n\n📌 **Commands**\n/search <keyword> — Search\n/categories — Browse (clickable)\n/daily — Daily pick\n/help — Help"
     ), parse_mode="Markdown")
 
-async def help_cmd(update, context):
-    await update.message.reply_text(_(
+async def help_cmd(u, c):
+    await u.message.reply_text(_(
         "📖 **使用帮助**\n\n🔍 /search 关键词 — 搜索\n📂 /categories — 点击分类浏览\n⭐ /daily — 每日推荐\n📝 /submit 名称:简介:链接 — 投稿\n\n💡 或直接输入文字自动搜索",
         "📖 **Help**\n\n🔍 /search keyword — Search\n📂 /categories — Tap to browse\n⭐ /daily — Daily pick\n📝 /submit Name:Desc:URL — Submit\n\n💡 Or just type to search"
     ), parse_mode="Markdown")
 
-async def categories(update, context):
-    try:
-        buttons = []
-        for cat in CATEGORIES:
-            emoji = get_emoji(cat); count = len(RESOURCES[cat])
-            buttons.append([InlineKeyboardButton(f"{emoji} {cat} ({count})", callback_data=f"cat:{cat}")])
-        await update.message.reply_text(_(
-            "📂 **资源分类**\n\n👇 点击分类查看资源",
-            "📂 **Categories**\n\n👇 Tap a category to browse"
-        ), parse_mode="Markdown", reply_markup=InlineKeyboardMarkup(buttons))
-    except Exception as e:
-        logger.error(f"categories: {e}")
+async def categories(u, c):
+    await u.message.reply_text(_(
+        "📂 **资源分类**\n\n👇 点击分类查看资源",
+        "📂 **Categories**\n\n👇 Tap a category to browse"
+    ), parse_mode="Markdown", reply_markup=InlineKeyboardMarkup(build_categories_kb()))
 
-async def search(update, context):
-    text = update.message.text.strip()
-    query = text.replace("/search", "", 1).strip() if text.startswith("/search") else text
-    if not query or len(query) < 2:
-        await update.message.reply_text(_("🔍 请输入关键词\n例如 /search 翻译 或直接发送「翻译」","🔍 Enter keywords\nE.g. /search translate")); return
-    results = search_resources(query)
+async def search(u, c):
+    text = u.message.text.strip()
+    q = text.replace("/search", "", 1).strip() if text.startswith("/search") else text
+    if not q or len(q) < 2:
+        await u.message.reply_text(_("🔍 请输入关键词\n例如 /search 翻译 或直接发送「翻译」","🔍 Enter keywords\nE.g. /search translate")); return
+    results = search_resources(q)
     if not results:
-        await update.message.reply_text(_(f"😅 没找到「{query}」相关的资源\n试试其他关键词或用 /categories","😅 No results for \"{query}\"\nTry other keywords or /categories")); return
-    grouped = defaultdict(list)
-    for r in results: grouped[r["category"]].append(r)
-    msg = _(f"🔍 **「{query}」结果（{len(results)} 条）**\n\n",f"🔍 **{query}** ({len(results)} results)\n\n")
-    for cat, items in grouped.items():
-        for item in items: msg += f"  • [{item['name']}]({item['url']}) — {item['desc'][:50]}\n"
-        msg += "\n"
-    await update.message.reply_text(msg, parse_mode="Markdown", disable_web_page_preview=True)
+        await u.message.reply_text(_(f"😅 没找到「{q}」相关的资源\n试试其他关键词或用 /categories",f"😅 No results for \"{q}\"\nTry other keywords or /categories")); return
+    grp = defaultdict(list)
+    for r in results: grp[r["category"]].append(r)
+    msg = _(f"🔍 **「{q}」结果（{len(results)} 条）**\n\n",f"🔍 **{q}** ({len(results)} results)\n\n")
+    for cat, items in grp.items():
+        for item in items: msg += f"  • [{item['name']}]({item['url']}) — {item['desc'][:50]}\n"; msg += "\n"
+    await u.message.reply_text(msg, parse_mode="Markdown", disable_web_page_preview=True)
 
-async def daily(update, context):
+async def daily(u, c):
     cat = random.choice(CATEGORIES); item = random.choice(RESOURCES[cat])
     msg = _("⭐ **今日推荐 / Daily Pick**\n\n","⭐ **Daily Pick**\n\n")
     msg += f"{get_emoji(cat)} **{item['name']}**\n   {item['desc']}\n   🔗 {item['url']}\n   📂 {cat}"
-    await update.message.reply_text(msg, parse_mode="Markdown")
+    await u.message.reply_text(msg, parse_mode="Markdown")
 
-async def submit(update, context):
-    text = update.message.text.replace("/submit", "", 1).strip()
+async def submit(u, c):
+    text = u.message.text.replace("/submit", "", 1).strip()
     if not text or ":" not in text:
-        await update.message.reply_text(_("📝 **Format:**\n/submit 名称:简介:链接\n例: /submit Notion AI:AI笔记:https://notion.so","📝 Format:\n/submit Name:Desc:URL")); return
+        await u.message.reply_text(_("📝 **Format:**\n/submit 名称:简介:链接\n例: /submit Notion AI:AI笔记:https://notion.so","📝 Format:\n/submit Name:Desc:URL")); return
     parts = text.split(":", 2)
-    if len(parts) < 3: await update.message.reply_text(_("格式不对","Invalid format")); return
-    name, desc, url = [p.strip() for p in parts]
-    logger.info(f"投稿: {name}")
-    await update.message.reply_text(_(f"✅ 收到「{name}」！审核后收录 🎉",f"✅ Thanks! We'll review \"{name}\" 🎉"))
+    if len(parts) < 3: await u.message.reply_text(_("格式不对","Invalid format")); return
+    n, d, url = [p.strip() for p in parts]
+    logger.info(f"投稿: {n}")
+    await u.message.reply_text(_(f"✅ 收到「{n}」！审核后收录 🎉",f"✅ Thanks! \"{n}\" 🎉"))
 
-async def text_handler(update, context):
+async def text_handler(u, c):
     try:
-        text = update.message.text.strip()
+        text = u.message.text.strip()
         if len(text) < 2: return
-        if update.message.chat.type in ("group", "supergroup"):
+        if u.message.chat.type in ("group", "supergroup"):
             if BOT_USERNAME.lower() not in text.lower(): return
             text = re.sub(r'@\w+', '', text).strip()
-        await search(update, context)
-    except Exception as e: logger.error(f"text: {e}")
+        await search(u, c)
+    except Exception as e: logger.error(f"txt: {e}")
 
-async def button_handler(update, context):
+async def button_handler(u, c):
     try:
-        q = update.callback_query; await q.answer(); d = q.data
-        logger.info(f"Click: {d}")
+        q = u.callback_query; await q.answer(); d = q.data
         if d == "back_cats":
-            buttons = []
-            for cat in CATEGORIES:
-                emoji = get_emoji(cat); count = len(RESOURCES[cat])
-                buttons.append([InlineKeyboardButton(f"{emoji} {cat} ({count})", callback_data=f"cat:{cat}")])
             await q.edit_message_text(_("📂 **资源分类**\n\n👇 点击分类查看资源","📂 **Categories**\n\n👇 Tap a category to browse"),
-                parse_mode="Markdown", reply_markup=InlineKeyboardMarkup(buttons)); return
+                parse_mode="Markdown", reply_markup=InlineKeyboardMarkup(build_categories_kb()))
+            return
         if d.startswith("cat:"):
-            cat_name = d.split(":", 1)[1]
-            logger.info(f"显示分类: {cat_name}")
+            parts = d.split(":"); cat_name = parts[1]; page = int(parts[2]) if len(parts) > 2 else 0
             if cat_name not in RESOURCES: return
-            items = RESOURCES[cat_name]; emoji = get_emoji(cat_name)
-            en = CATEGORY_EN.get(cat_name, "")
-            msg = f"{emoji} **{cat_name}** ({len(items)}) — {en}\n\n"
-            for i, item in enumerate(items[:10], 1):
-                msg += f"{i}. [{item['name']}]({item['url']})\n   {item['desc'][:60]}\n\n"
-            if len(items) > 10:
-                msg += _(f"...还有 {len(items)-10} 条，用 /search 搜索更多", f"...{len(items)-10} more, use /search")
-            await q.edit_message_text(msg, parse_mode="Markdown",
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📂 Back / 返回", callback_data="back_cats")]]),
-                disable_web_page_preview=True)
-    except Exception as e: logger.error(f"button: {e}", exc_info=True)
+            items = RESOURCES[cat_name]; total = len(items)
+            tp = (total + ITEMS_PER_PAGE - 1) // ITEMS_PER_PAGE
+            s = page * ITEMS_PER_PAGE; e = min(s + ITEMS_PER_PAGE, total)
+            msg = f"{get_emoji(cat_name)} **{cat_name}** ({total}) — {CATEGORY_EN.get(cat_name, '')}\n\n"
+            for i in range(s, e):
+                item = items[i]
+                msg += f"{i+1}. [{item['name']}]({item['url']})\n   {item['desc'][:60]}\n\n"
+            nav_row = []
+            if page > 0: nav_row.append(InlineKeyboardButton("◀️", callback_data=f"cat:{cat_name}:{page-1}"))
+            nav_row.append(InlineKeyboardButton(f"{page+1}/{tp}", callback_data="noop"))
+            if page < tp - 1: nav_row.append(InlineKeyboardButton("▶️", callback_data=f"cat:{cat_name}:{page+1}"))
+            btns = [nav_row, [InlineKeyboardButton("📂 Back / 返回", callback_data="back_cats")]]
+            await q.edit_message_text(msg, parse_mode="Markdown", reply_markup=InlineKeyboardMarkup(btns), disable_web_page_preview=True)
+    except Exception as e: logger.error(f"btn: {e}")
 
-async def error_handler(update, context):
-    logger.error(f"Error: {context.error}")
+async def error_handler(u, c): logger.error(f"Err: {c.error}")
 
 def main():
     app = Application.builder().token(token).build()
