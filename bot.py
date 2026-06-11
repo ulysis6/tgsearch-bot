@@ -17,7 +17,8 @@ with open(RESOURCES_FILE, "r", encoding="utf-8") as f:
 
 CATEGORIES = list(RESOURCES.keys())
 CATEGORY_EMOJIS = {"电子书资源":"📚","学习资源":"🎓","设计素材":"🎨","软件工具":"💻","AI工具":"🤖","效率模板":"📋","搞钱/副业资源":"💰"}
-CATEGORY_EN = {"电子书资源":"E-books","学习资源":"Learning","设计素材":"Design","软件工具":"Software","AI工具":"AI Tools","效率模板":"Templates","搞钱/副业资源":"Money"}
+CATEGORY_EN = {"电子书资源":"Free E-books & PDFs","学习资源":"Free Online Courses","设计素材":"Free Design Assets","软件工具":"Free Software","AI工具":"Free AI Tools","效率模板":"Free Productivity","搞钱/副业资源":"Make Money Online"}
+CN_FREE = {"电子书资源":"免费电子书","学习资源":"免费课程","设计素材":"免费设计素材","软件工具":"免费软件","AI工具":"免费AI工具","效率模板":"免费效率模板","搞钱/副业资源":"搞钱副业"}
 
 SEARCH_INDEX = []
 for cat, items in RESOURCES.items():
@@ -35,7 +36,9 @@ def build_menu_kb():
     """首页菜单按钮"""
     btns = []
     for cat in CATEGORIES:
-        label = f"{get_emoji(cat)} {cat} - {CATEGORY_EN.get(cat, '')} ({len(RESOURCES[cat])})"
+        cn = CN_FREE.get(cat, cat)
+        en = CATEGORY_EN.get(cat, '')
+        label = f"{get_emoji(cat)} {cn} - {en} ({len(RESOURCES[cat])})"
         btns.append([InlineKeyboardButton(label, callback_data=f"cat:{cat}:0")])
     btns.append([InlineKeyboardButton("🛠 最全免费工具 - Free Online Tools", url="https://toolmixr.com")])
     btns.append([InlineKeyboardButton("🤖 最新AI测评 - Latest AI Reviews", url="https://genaipick.com")])
@@ -119,7 +122,7 @@ async def button_handler(u, c):
             items = RESOURCES[cat_name]; total = len(items)
             tp = (total + ITEMS_PER_PAGE - 1) // ITEMS_PER_PAGE
             s = page * ITEMS_PER_PAGE; e = min(s + ITEMS_PER_PAGE, total)
-            msg = f"{get_emoji(cat_name)} **{cat_name}** ({total}) — {CATEGORY_EN.get(cat_name, '')}\n\n"
+            msg = f"{get_emoji(cat_name)} **{CN_FREE.get(cat_name, cat_name)}** ({total}) — {CATEGORY_EN.get(cat_name, '')}\n\n"
             for i in range(s, e):
                 item = items[i]
                 msg += f"{i+1}. [{item['name']}]({item['url']})\n   {item['desc'][:60]}\n\n"
