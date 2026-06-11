@@ -36,6 +36,11 @@ def build_categories_kb():
     for cat in CATEGORIES:
         btn = InlineKeyboardButton(f"{get_emoji(cat)} {cat} ({len(RESOURCES[cat])})", callback_data=f"cat:{cat}:0")
         buttons.append([btn])
+    # 添加toolmixr和genaipick网站入口
+    buttons.append([
+        InlineKeyboardButton("🛠 toolmixr.com — 最全免费工具", url="https://toolmixr.com"),
+        InlineKeyboardButton("🤖 genaipick.com — 最新AI测评", url="https://genaipick.com"),
+    ])
     return buttons
 
 def search_resources(query, mx=8):
